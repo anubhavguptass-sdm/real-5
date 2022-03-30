@@ -1,0 +1,694 @@
+<app-header></app-header>
+<section class="hero_section">
+  <div class="container">
+    <h1>We've Changed The Game</h1>
+    <img src="../../assets/img/building-2.png" alt="" />
+  </div>
+</section>
+<section class="building_section">
+  <div class="container">
+    <ul>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+    </ul>
+    <h2>
+      <strong>There are many variations</strong> of passages of Lorem Ipsum
+      available, but the majority have suffered alteration in some form, by
+      injected humour, or randomised words which don't look even slightly
+      believable
+    </h2>
+  </div>
+</section>
+<section class="who_we_are">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="left_section">
+          <img src="../../assets/img/building-3.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="right_section">
+          <h2><span>Who</span> we are</h2>
+          <p class="big-text">
+            Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet
+            eleifend dapibus. Cras sagittis, ex euismod lacinia tempor.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
+            ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend
+            dapibus.
+          </p>
+          <ul>
+            <li><img src="../../assets/img/icon-1.png" alt="" /></li>
+            <li><img src="../../assets/img/icon-2.png" alt="" /></li>
+            <li><img src="../../assets/img/icon-3.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Carousel -->
+<section class="carousel pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h3 class="mb-3"><span>Featured</span> Properties</h3>
+        <p>Handpicked properties by our team.</p>
+      </div>
+      <div class="col-3 text-right">
+        <a
+          class="mb-3 mr-4"
+          href="#carouselExampleIndicators2"
+          role="button"
+          data-slide="prev"
+        >
+          <img src="../../assets/img/left_slide_arrow.png" alt="left_arrow" />
+        </a>
+        <a
+          class="mb-3"
+          href="#carouselExampleIndicators2"
+          role="button"
+          data-slide="next"
+        >
+          <img src="../../assets/img/right_slide_arrow.png" alt="right_arrow" />
+        </a>
+      </div>
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig1"
+        (init)="slickInit()"
+        (breakpoint)="breakpoint()"
+        (afterChange)="afterChange()"
+        (beforeChange)="beforeChange()"
+      >
+        <div ngxSlickItem class="slide">
+          <div class="card">
+            <img
+              class="img-fluid"
+              alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+            />
+            <div class="card-body">
+              <h6>Modern Villa</h6>
+              <h4 class="card-title">Comfortable Villa in Green</h4>
+              <p class="card-text">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                Michigan Ave,Chicago, IL, 60605.
+              </p>
+              <div class="featured">
+                <div class="row4">
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bed.png" alt="bed" /> 05 bed
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                      sqft
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cost">
+                <div class="row">
+                  <div class="col-12">
+                    <p>$600</p>
+                    <button class="btn btn-black view-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div ngxSlickItem class="slide">
+          <div class="card">
+            <img
+              class="img-fluid"
+              alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+            />
+            <div class="card-body">
+              <h6>Modern Villa</h6>
+              <h4 class="card-title">Comfortable Villa in Green</h4>
+              <p class="card-text">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                Michigan Ave,Chicago, IL, 60605.
+              </p>
+              <div class="featured">
+                <div class="row4">
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bed.png" alt="bed" /> 05 bed
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                      sqft
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cost">
+                <div class="row">
+                  <div class="col-12">
+                    <p>$600</p>
+                    <button class="btn btn-black view-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div ngxSlickItem class="slide">
+          <div class="card">
+            <img
+              class="img-fluid"
+              alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+            />
+            <div class="card-body">
+              <h6>Modern Villa</h6>
+              <h4 class="card-title">Comfortable Villa in Green</h4>
+              <p class="card-text">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                Michigan Ave,Chicago, IL, 60605.
+              </p>
+              <div class="featured">
+                <div class="row4">
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bed.png" alt="bed" /> 05 bed
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                      sqft
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cost">
+                <div class="row">
+                  <div class="col-12">
+                    <p>$600</p>
+                    <button class="btn btn-black view-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div ngxSlickItem class="slide">
+          <div class="card">
+            <img
+              class="img-fluid"
+              alt="100%x280"
+              src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+            />
+            <div class="card-body">
+              <h6>Modern Villa</h6>
+              <h4 class="card-title">Comfortable Villa in Green</h4>
+              <p class="card-text">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                Michigan Ave,Chicago, IL, 60605.
+              </p>
+              <div class="featured">
+                <div class="row4">
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bed.png" alt="bed" /> 05 bed
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                      sqft
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cost">
+                <div class="row">
+                  <div class="col-12">
+                    <p>$600</p>
+                    <button class="btn btn-black view-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div ngxSlickItem class="slide">
+          <div class="card">
+            <img
+              class="img-fluid"
+              alt="100%x280"
+              src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+            />
+            <div class="card-body">
+              <h6>Modern Villa</h6>
+              <h4 class="card-title">Comfortable Villa in Green</h4>
+              <p class="card-text">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                Michigan Ave,Chicago, IL, 60605.
+              </p>
+              <div class="featured">
+                <div class="row4">
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bed.png" alt="bed" /> 05 bed
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                    </p>
+                  </div>
+                  <div class="col4">
+                    <p>
+                      <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                      sqft
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cost">
+                <div class="row">
+                  <div class="col-12">
+                    <p>$600</p>
+                    <button class="btn btn-black view-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</section>
+
+<section class="why_choose_us">
+  <div class="container">
+    <h2>Why <span>Choose Us</span></h2>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house.svg" alt="" />
+          <h3>Find your <span>future home</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/handshake.svg" alt="" />
+          <h3>Experienced <span>agents</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house-2.svg" alt="" />
+          <h3>Buy or rent <span>home</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house.svg" alt="" />
+          <h3>List your <span>property</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mortgage_calculator">
+  <div class="container">
+    <div class="calc_card">
+      <h1>
+        Mortgag<u>e <span>Cal</span></u
+        ><span>culator</span>
+      </h1>
+      <button class="btn btn-black blue-btn mr-5">Mortgage Calculator</button>
+      <button class="btn btn-black blue-btn">Loan Calculator</button>
+    </div>
+  </div>
+</section>
+<section class="find_prop">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="prop_card">
+          <h4>Find <span>Properties</span></h4>
+          <form>
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Sale
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="search_bar">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Location"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="setting">
+                  <img src="../../assets/img/filter.png" alt="filter" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                  />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img
+                              src="../../assets/img/Group2309.png"
+                              alt="bed"
+                            />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                  />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img
+                              src="../../assets/img/Group2309.png"
+                              alt="bed"
+                            />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                  />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img
+                              src="../../assets/img/Group2309.png"
+                              alt="bed"
+                            />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                  />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img
+                              src="../../assets/img/Group2309.png"
+                              alt="bed"
+                            />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bg_map" id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="app_feature">
+  <div class="container">
+    <h3>App <span>Feature</span></h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row">
+      <div class="col-4">
+        <div class="info-timeline">
+          <ul>
+            <li><span class="timeline-circle"></span> Get Property</li>
+            <li class="active">
+              <span class="timeline-circle"></span> Request to agent
+            </li>
+            <li><span class="timeline-circle"></span> User</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="mobile_img">
+          <img src="../../assets/img/mobile.png" alt="mobile image" />
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text">
+          <p>
+            Enjoy your ride. Follow all traffic rules, stick to the streets &
+            bike lanes where legally permitted. Wear a helmet and respect others
+            sharing the road.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="register_now">
+  <div class="container">
+    <div class="register_sec">
+      <div class="register_left">
+        <h2>Become a Real Estate Agent</h2>
+        <p>We only work with the best companies around the globe</p>
+      </div>
+      <button class="btn btn-black">Register Now</button>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

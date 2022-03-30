@@ -1,0 +1,37 @@
+@import "../../assets/scss/variable.scss";
+
+.about_sec {
+    padding: 4rem 0;
+    background-color: #fafafa;
+    h2 {
+        margin-bottom: 3rem;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+            background-color: $primaryColor;
+        }
+    }
+    .user_card {
+        box-shadow: 0px 3px 6px #00000017;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        img {
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #03101F;
+            margin: 0;
+            letter-spacing: 0.4px;
+            font-size: 20px;
+            font-weight: 600;
+            min-height: 60px;
+        }
+    }
+}
