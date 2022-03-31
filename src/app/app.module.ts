@@ -14,6 +14,7 @@ import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AboutComponent } from './about/about.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { PropertyDetailComponent } from './property-detail/property-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     TermsOfUseComponent,
     PrivacyPolicyComponent,
     AboutComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    PropertyDetailComponent
   ],
   imports: [
     BrowserModule,

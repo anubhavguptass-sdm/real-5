@@ -1,0 +1,352 @@
+@import "../../assets/scss/variable.scss";
+
+.property-detail {
+  padding: 3.5rem 0;
+  background-color: $grayColor1;
+  
+    .detail-card {
+        
+      .bty-primary {
+        background: #ECFEFF 0% 0% no-repeat padding-box !important;
+        border: 0.5px solid #1AC7CF !important;
+        color: #1AC7CF !important;
+        margin-right: 12px;
+        font-size: 14px;
+      }
+      .bty-primary.red {
+        background: #FFECEC 0% 0% no-repeat padding-box !important;
+        border: 0.5px solid #FF5D5D !important;
+        color: #FF5D5D !important;
+        font-size: 14px;
+      }
+      .bty-primary.green {
+        background: #E6FFEA 0% 0% no-repeat padding-box !important;
+        border: 0.5px solid #076E18 !important;
+        color: #076E18 !important;
+        font-size: 14px;
+      }
+      h1{
+          font-size: 30px;
+          color: #03101F;
+          font-weight: 500;
+          line-height: 1;
+          margin-top: 1rem;
+      }
+      p{
+          font-size: 20px;
+          margin-top: 14px;
+          color: #03101F;
+          font-weight: 400;
+          span{
+              color: #9E9E9E;
+          }
+      }
+    }
+    .price{
+        text-align: right;
+        p{
+            font-size: 30px;
+            color: #1AC7CF;
+            font-weight: 700;
+            text-align: right;
+        }
+        .bty-primary{
+            background-color: #1AC7CF;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            width: 200px;
+            height: 60px;
+        }
+    }
+    .description{
+        .descp_card{
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content:space-between;
+                align-items: flex-start;
+                li{
+                    display: inline-block;
+                    color: #03101F;
+                    font-size: 18px;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .slider{
+            
+            img{
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .quick_info{
+            margin-top: 4rem;
+            h4{
+                font-size: 25px;
+                color: #000000;
+                font-weight: 500;
+
+            }
+            .quick-card{
+                background-color: #fff;
+                padding: 0px;
+                margin: 0;
+            }
+            .beds{
+                background: url('../../assets/img/bed-border.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+            .bath{
+                background: url('../../assets/img/bath-border.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+            .sqft{
+                background: url('../../assets/img/sqft-border.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+            .garage{
+                background: url('../../assets/img/garage.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+            .size{
+                background: url('../../assets/img/size.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+            .floor{
+                background: url('../../assets/img/floor.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                padding: 20px 10px 10px;
+                h6{
+                    font-size: 16px;
+                    color: #9E9E9E;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 20px;
+                    color: #03101F;
+                    font-weight: 700;
+                }
+            }
+
+        }
+        .description{
+            margin-top: 46px;
+            .dis-card{
+                h4{
+                    font-size: 25px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+            .amenties_card{
+                margin-top: 1rem;
+                h4{
+                    font-size: 25px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+                .amenties_type{
+                    
+                    p{
+                        font-size: 16px;
+                        color: #9D9D9D;
+                    }
+                }
+            }
+            .map{
+                h4{
+                    font-size: 25px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+                .image{
+                    img{
+                        width: 100%;
+                        height: 361px;
+                    }
+                }
+            }
+            .floor-plans{
+                margin-top: 1rem;
+                h4{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                .plan-card{
+                    background-color: #fff;
+                    padding: 22px 28px;
+                    h6{
+                        font-size: 18px;
+                        color: #000000;
+                        margin-bottom: 20px;
+                    }
+                    .image{
+                        padding: 2rem 1rem;
+                        img{
+                            height: 190px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .video{
+                margin-top: 1rem;
+                h4{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                .image{
+                    img{
+                        width: 100%;
+                        height: 360px;
+                    }
+                }
+            }
+            
+        }
+        .contact_agent{
+            h4{
+                font-size: 25px;
+                color: #000000;
+                font-weight: 500;
+            }
+            .agent-card{
+                background-color: #fff;
+                padding: 1rem;
+                
+                .round_img{
+                
+                    img{
+                        width: 73px;
+                        height: 73px;
+                        border-radius: 40px;
+                    }
+                }
+                h5{
+                    font-size: 20px;
+                    color: #1AC7CF;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+                p{
+                    font-size: 15px;
+                    color: #000000!important;
+                    font-weight: 400;
+
+                }
+                form{
+                    margin-top: 1.5rem;
+                    text-align: right;
+                    button{
+                        width: 200px;
+                        height: 60px;
+                        background-color: #1AC7CF;
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .location{
+                margin-top: 34px;
+                .location-card {
+                    padding: 1rem;
+                    background-color: #fff;
+                    .row{
+                        margin-top: 1rem;
+                        .col-5{
+                            font-weight: 700;
+                            font-size: 16px;
+                            img{
+                                width: 10px;
+                                
+                            }
+                        }
+                        .col-7{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+  }
+
