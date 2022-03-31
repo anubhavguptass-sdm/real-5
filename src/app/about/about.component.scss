@@ -35,6 +35,51 @@
         }
     }
 }
-
-
-
+.faq_section {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    .accordion {
+        .card {
+            border-radius: 0;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            border: 1px solid #9E9E9E;
+            .card-header {
+                background-color: #fff;
+                h2 {
+                    button {
+                        color: #03101F;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        box-shadow: none;
+                        outline: none;
+                        img {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.search_input {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 3rem;
+    input {
+        height: 65px;
+        border-radius: 0;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        width: 100%;
+    }
+    img {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 30px;
+    }
+}
