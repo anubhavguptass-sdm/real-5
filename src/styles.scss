@@ -81,7 +81,7 @@ a {
   margin-bottom: 1.4rem;
 }
 .form-control {
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   background-color: $grayColor3;
   height: 72px;
   padding: 1rem 1.5rem;
@@ -135,7 +135,7 @@ a {
   height: 23px;
   width: 23px;
   background-color: #fff;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   border-radius: 6px;
 }
 
@@ -185,8 +185,22 @@ a {
       font-size: 1rem;
     }
   }
-  .breadcrumb-item+.breadcrumb-item::before {
-    content: '>';
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
     font-family: monospace;
+  }
+}
+.btn-primary {
+  background-color: #1ac7cf;
+  border-color: #1ac7cf;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  &:focus,
+  &:hover {
+    background-color: #1ac7cf;
+    border-color: #1ac7cf;
   }
 }
