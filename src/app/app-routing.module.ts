@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { PropertyDetailComponent } from './property-detail/property-detail.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'property-detail',
+    component: PropertyDetailComponent
   },
 ];
 
