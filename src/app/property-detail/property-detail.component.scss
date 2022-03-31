@@ -1,57 +1,56 @@
 @import "../../assets/scss/variable.scss";
 
 .property-detail {
-  padding: 3.5rem 0;
-  background-color: $grayColor1;
-  
+    padding: 3.5rem 0;
+    background-color: $grayColor1;
+
     .detail-card {
-        
-      .bty-primary {
-        background: #ECFEFF 0% 0% no-repeat padding-box !important;
-        border: 0.5px solid #1AC7CF !important;
-        color: #1AC7CF !important;
-        margin-right: 12px;
-        font-size: 14px;
-      }
-      .bty-primary.red {
-        background: #FFECEC 0% 0% no-repeat padding-box !important;
-        border: 0.5px solid #FF5D5D !important;
-        color: #FF5D5D !important;
-        font-size: 14px;
-      }
-      .bty-primary.green {
-        background: #E6FFEA 0% 0% no-repeat padding-box !important;
-        border: 0.5px solid #076E18 !important;
-        color: #076E18 !important;
-        font-size: 14px;
-      }
-      h1{
-          font-size: 30px;
-          color: #03101F;
-          font-weight: 500;
-          line-height: 1;
-          margin-top: 1rem;
-      }
-      p{
-          font-size: 20px;
-          margin-top: 14px;
-          color: #03101F;
-          font-weight: 400;
-          span{
-              color: #9E9E9E;
-          }
-      }
-    }
-    .price{
-        text-align: right;
-        p{
+        .bty-primary {
+            background: #ecfeff 0% 0% no-repeat padding-box !important;
+            border: 0.5px solid #1ac7cf !important;
+            color: #1ac7cf !important;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        .bty-primary.red {
+            background: #ffecec 0% 0% no-repeat padding-box !important;
+            border: 0.5px solid #ff5d5d !important;
+            color: #ff5d5d !important;
+            font-size: 14px;
+        }
+        .bty-primary.green {
+            background: #e6ffea 0% 0% no-repeat padding-box !important;
+            border: 0.5px solid #076e18 !important;
+            color: #076e18 !important;
+            font-size: 14px;
+        }
+        h1 {
             font-size: 30px;
-            color: #1AC7CF;
+            color: #03101f;
+            font-weight: 500;
+            line-height: 1;
+            margin-top: 1rem;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 14px;
+            color: #03101f;
+            font-weight: 400;
+            span {
+                color: #9e9e9e;
+            }
+        }
+    }
+    .price {
+        text-align: right;
+        p {
+            font-size: 30px;
+            color: #1ac7cf;
             font-weight: 700;
             text-align: right;
         }
-        .bty-primary{
-            background-color: #1AC7CF;
+        .bty-primary {
+            background-color: #1ac7cf;
             border-radius: 8px;
             color: #fff;
             font-size: 16px;
@@ -60,284 +59,276 @@
             height: 60px;
         }
     }
-    .description{
-        .descp_card{
-            ul{
+    .description {
+        .descp_card {
+            ul {
                 list-style-type: none;
                 display: flex;
-                justify-content:space-between;
+                justify-content: space-between;
                 align-items: flex-start;
-                li{
+                li {
                     display: inline-block;
-                    color: #03101F;
+                    color: #03101f;
                     font-size: 18px;
-                    span{
+                    span {
                         font-weight: 500;
                     }
                 }
             }
         }
-        .slider{
-            
-            img{
+        .slider {
+            img {
                 width: 100%;
                 height: 500px;
             }
         }
-        .quick_info{
+        .quick_info {
             margin-top: 4rem;
-            h4{
+            h4 {
                 font-size: 25px;
                 color: #000000;
                 font-weight: 500;
-
             }
-            .quick-card{
+            .quick-card {
                 background-color: #fff;
                 padding: 0px;
                 margin: 0;
             }
-            .beds{
-                background: url('../../assets/img/bed-border.png');
+            .beds {
+                background: url("../../assets/img/bed-border.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-            .bath{
-                background: url('../../assets/img/bath-border.png');
+            .bath {
+                background: url("../../assets/img/bath-border.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-            .sqft{
-                background: url('../../assets/img/sqft-border.png');
+            .sqft {
+                background: url("../../assets/img/sqft-border.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-            .garage{
-                background: url('../../assets/img/garage.png');
+            .garage {
+                background: url("../../assets/img/garage.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-            .size{
-                background: url('../../assets/img/size.png');
+            .size {
+                background: url("../../assets/img/size.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-            .floor{
-                background: url('../../assets/img/floor.png');
+            .floor {
+                background: url("../../assets/img/floor.png");
                 background-position: right bottom;
                 background-repeat: no-repeat;
 
                 padding: 20px 10px 10px;
-                h6{
+                h6 {
                     font-size: 16px;
-                    color: #9E9E9E;
+                    color: #9e9e9e;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 20px;
-                    color: #03101F;
+                    color: #03101f;
                     font-weight: 700;
                 }
             }
-
         }
-        .description{
+        .description {
             margin-top: 46px;
-            .dis-card{
-                h4{
+            .dis-card {
+                h4 {
                     font-size: 25px;
                     color: #000000;
                     font-weight: 500;
                 }
-                p{
+                p {
                     font-size: 16px;
                     color: #000000;
                 }
             }
-            .amenties_card{
+            .amenties_card {
                 margin-top: 1rem;
-                h4{
+                h4 {
                     font-size: 25px;
                     color: #000000;
                     font-weight: 500;
                 }
-                .amenties_type{
-                    
-                    p{
+                .amenties_type {
+                    p {
                         font-size: 16px;
-                        color: #9D9D9D;
+                        color: #9d9d9d;
                     }
                 }
             }
-            .map{
-                h4{
+            .map {
+                h4 {
                     font-size: 25px;
                     color: #000000;
                     font-weight: 500;
                 }
-                .image{
-                    img{
+                .image {
+                    img {
                         width: 100%;
                         height: 361px;
                     }
                 }
             }
-            .floor-plans{
+            .floor-plans {
                 margin-top: 1rem;
-                h4{
+                h4 {
                     font-size: 25px;
                     font-weight: 700;
                 }
-                .plan-card{
+                .plan-card {
                     background-color: #fff;
                     padding: 22px 28px;
-                    h6{
+                    h6 {
                         font-size: 18px;
                         color: #000000;
                         margin-bottom: 20px;
                     }
-                    .image{
+                    .image {
                         padding: 2rem 1rem;
-                        img{
+                        img {
                             height: 190px;
                             width: 100%;
                         }
                     }
                 }
             }
-            .video{
+            .video {
                 margin-top: 1rem;
-                h4{
+                h4 {
                     font-size: 25px;
                     font-weight: 700;
                 }
-                .image{
-                    img{
+                .image {
+                    img {
                         width: 100%;
                         height: 360px;
                     }
                 }
             }
-            
         }
-        .contact_agent{
-            h4{
+        .contact_agent {
+            h4 {
                 font-size: 25px;
                 color: #000000;
                 font-weight: 500;
             }
-            .agent-card{
+            .agent-card {
                 background-color: #fff;
                 padding: 1rem;
-                
-                .round_img{
-                
-                    img{
+
+                .round_img {
+                    img {
                         width: 73px;
                         height: 73px;
                         border-radius: 40px;
                     }
                 }
-                h5{
+                h5 {
                     font-size: 20px;
-                    color: #1AC7CF;
+                    color: #1ac7cf;
                     font-weight: 500;
                     line-height: 1.5;
                 }
-                p{
+                p {
                     font-size: 15px;
-                    color: #000000!important;
+                    color: #000000 !important;
                     font-weight: 400;
-
                 }
-                form{
+                form {
                     margin-top: 1.5rem;
                     text-align: right;
-                    button{
+                    button {
                         width: 200px;
                         height: 60px;
-                        background-color: #1AC7CF;
+                        background-color: #1ac7cf;
                         color: #fff;
                         font-size: 16px;
                     }
                 }
             }
-            .location{
+            .location {
                 margin-top: 34px;
                 .location-card {
                     padding: 1rem;
                     background-color: #fff;
-                    .row{
+                    .row {
                         margin-top: 1rem;
-                        .col-5{
+                        .col-5 {
                             font-weight: 700;
                             font-size: 16px;
-                            img{
+                            img {
                                 width: 10px;
-                                
                             }
                         }
-                        .col-7{
+                        .col-7 {
                             font-size: 16px;
                             font-weight: 400;
                         }
@@ -346,7 +337,16 @@
             }
         }
     }
-    
+}
 
-  }
-
+.carousel-indicators {
+    bottom: -2rem;
+    li {
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border-radius: 10px;
+        border-top: none;
+        border-bottom: none;
+    }
+}

@@ -34,7 +34,6 @@ import { PropertyDetailComponent } from './property-detail/property-detail.compo
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
-    // SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

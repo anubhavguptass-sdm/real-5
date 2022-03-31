@@ -19,8 +19,10 @@
             <button class="btn bty-primary red">SOLD</button>
             <button class="btn bty-primary green">New</button>
             <h1>Big Luxury Apartment</h1>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan Ave,Chicago, IL, 60605 |
-              <span>Posted</span>: 6 Month ago</p>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605 | <span>Posted</span>: 6 Month ago
+            </p>
           </div>
         </div>
         <div class="col-3">
@@ -40,18 +42,48 @@
             <ul>
               <li>Property ID : <span>#5331</span></li>
               <li>|</li>
-              <li>Add to favorites: <img src="../../assets/img/heart.png" alt="image" /></li>
+              <li>
+                Add to favorites:
+                <img src="../../assets/img/heart.png" alt="image" />
+              </li>
               <li>|</li>
               <li>Property Age : <span>Build in 2021</span></li>
               <li>|</li>
               <li>Current status : <span>Under Construction</span></li>
             </ul>
           </div>
-          <div class="slider">
-            <div class="image">
-              <img src="../../assets/img/building-1.png" alt="image" />
+          <ngx-slick-carousel
+            class="carousel carousel_area"
+            #slickModal="slick-carousel"
+            [config]="slideConfig1"
+            (init)="slickInit()"
+            (breakpoint)="breakpoint()"
+            (afterChange)="afterChange()"
+            (beforeChange)="beforeChange()"
+          >
+            <div class="image" ngxSlickItem>
+              <img
+              src="../../assets/img/building-1.png"
+              class="d-block w-100"
+              alt="..."
+            />
             </div>
-          </div>
+            <div class="image" ngxSlickItem>
+              <img
+              src="../../assets/img/building-1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            </div>
+            <div class="image" ngxSlickItem>
+              <img
+              src="../../assets/img/building-1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            </div>
+          </ngx-slick-carousel>
+          
           <div class="quick_info">
             <h4>Quick Info</h4>
             <div class="quick-card">
@@ -101,41 +133,57 @@
                 <div class="col-8">
                   <div class="dis-card">
                     <h4>Description</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum ac augue et suscipit. Vivamus
-                      ac tellus ut massa bibendum aliquam vitae ac diam. Aenean in enim volutpat, accumsan erat non,
-                      porta massa. Nulla ac porta orci. Quisque condimentum fermentum isl, lacinia tempor erat venenatis
-                      non. Integer ut malesuada est, nec pulvinar magna. Vestibulum tincidunt malesuada mi eget mattis.
-                      Phasellus quis purus porta, auctor dolor sed, eleifend tortor. Vestibulum placerat tristique
-                      turpis, eu suscipit nulla elementum porttitor. Duis eu varius libero.</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In dictum ac augue et suscipit. Vivamus ac tellus ut massa
+                      bibendum aliquam vitae ac diam. Aenean in enim volutpat,
+                      accumsan erat non, porta massa. Nulla ac porta orci.
+                      Quisque condimentum fermentum isl, lacinia tempor erat
+                      venenatis non. Integer ut malesuada est, nec pulvinar
+                      magna. Vestibulum tincidunt malesuada mi eget mattis.
+                      Phasellus quis purus porta, auctor dolor sed, eleifend
+                      tortor. Vestibulum placerat tristique turpis, eu suscipit
+                      nulla elementum porttitor. Duis eu varius libero.
+                    </p>
                   </div>
                   <div class="amenties_card">
                     <h4>Amenities</h4>
                     <div class="amenties_type">
                       <div class="row">
                         <div class="col-3">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> Alarm
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i> Alarm
                           </p>
                         </div>
                         <div class="col-6">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> Restaurant Nearby ( 1.0 km)
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            Restaurant Nearby ( 1.0 km)
                           </p>
                         </div>
                         <div class="col-3">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> Gym ( 1.5 km)
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i> Gym (
+                            1.5 km)
                           </p>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-3">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> wifi
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i> wifi
                           </p>
                         </div>
                         <div class="col-6">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> Train Station ( 1.5 km)
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i> Train
+                            Station ( 1.5 km)
                           </p>
                         </div>
                         <div class="col-3">
-                          <p><i class="fa fa-bell" aria-hidden="true"></i> Playroom
+                          <p>
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            Playroom
                           </p>
                         </div>
                       </div>
@@ -154,7 +202,7 @@
                         <div class="plan-card">
                           <h6>1st Floor (1325 sqft)</h6>
                           <div class="image">
-                            <img src="../../assets/img/building-1.png" >
+                            <img src="../../assets/img/building-1.png" />
                           </div>
                         </div>
                       </div>
@@ -162,7 +210,7 @@
                         <div class="plan-card">
                           <h6>2st Floor (1325 sqft)</h6>
                           <div class="image">
-                            <img src="../../assets/img/building-1.png" >
+                            <img src="../../assets/img/building-1.png" />
                           </div>
                         </div>
                       </div>
@@ -196,18 +244,34 @@
                         <div class="col-12">
                           <form>
                             <div class="form-group">
-                              <input type="text" class="form-control" id="name" placeholder="Your Name">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Your Name"
+                              />
                             </div>
                             <div class="form-group">
-                              <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                aria-describedby="emailHelp">
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="Your Email"
+                                aria-describedby="emailHelp"
+                              />
                             </div>
                             <div class="form-group">
-                              <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                              <textarea
+                                class="form-control"
+                                id="message"
+                                rows="3"
+                                placeholder="Message"
+                              ></textarea>
                             </div>
-                            <button class="btn btn-primary">Send Message</button>
+                            <button class="btn btn-primary">
+                              Send Message
+                            </button>
                           </form>
-                          
                         </div>
                       </div>
                     </div>
@@ -215,18 +279,24 @@
                       <h4>Location</h4>
                       <div class="location-card">
                         <div class="row">
-                          <div class="col-5"><img src="../../assets/img/pin.png"> Address:</div>
+                          <div class="col-5">
+                            <img src="../../assets/img/pin.png" /> Address:
+                          </div>
                           <div class="col-7">1350 Arbutus Drive, LD</div>
                         </div>
                         <div class="row">
-                          <div class="col-5"><img src="../../assets/img/phone-call).png"> Phone:</div>
+                          <div class="col-5">
+                            <img src="../../assets/img/phone-call).png" />
+                            Phone:
+                          </div>
                           <div class="col-7">+1 602-862-1673</div>
                         </div>
                         <div class="row">
-                          <div class="col-5"><img src="../../assets/img/email.png"> Email:</div>
+                          <div class="col-5">
+                            <img src="../../assets/img/email.png" /> Email:
+                          </div>
                           <div class="col-7">hello@property.com</div>
                         </div>
-                       
                       </div>
                     </div>
                   </div>
