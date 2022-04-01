@@ -205,9 +205,12 @@
     }
   }
 }
-
+.property_slider{
+  margin: 0rem 0 3rem;
+}
 .carousel_area {
-  margin: 3rem 0;
+  margin: 1rem 0;
+  
   .slide {
     h3 {
       font-size: 40px;
@@ -237,103 +240,113 @@
         }
       }
     }
+  }
+  .carousel.slide {
+    margin-top: 0rem;
+  }
 
-    .carousel.slide {
-      margin-top: 2rem;
+  .card {
+    border: none;
+    
+    
+
+    padding: 0 10px;
+
+    > img {
+      width: 100%!important;
+      height: 393px;
     }
 
-    .card {
+    .card-body {
+      box-shadow: 0px 12px 18px #00000014;
+      width: 92%;
+      margin: -116px auto 0 12px;
       border: none;
+      z-index: 10;
+      background-color: #fff;
+      
 
-      > img {
-        width: 490px;
-        height: 393px;
+      h6 {
+        color: #1ac7cf;
+        line-height: 1;
+        margin: 0 0 8px;
       }
 
-      .card-body {
-        box-shadow: 0px 12px 18px #00000014;
-        width: 90%;
-        margin: -116px auto 0;
-        border: none;
-        z-index: 10;
-        background-color: #fff;
+      h4 {
+        font-size: 20px;
+        color: #03101f;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 1rem;
+      }
 
-        h6 {
-          color: #1ac7cf;
-          line-height: 1;
-          margin: 0 0 8px;
-        }
+      p {
+        font-size: 14px;
+        color: #8c8c8c;
+        line-height: 18px;
+        margin: 0 0 1rem;
+      }
 
-        h4 {
-          font-size: 20px;
-          color: #03101f;
-          font-weight: 700;
-          line-height: 1;
-          margin: 0 0 1rem;
-        }
+      .featured {
+        border-top: 1px dotted #8c8c8c;
+        padding-top: 1rem;
 
-        p {
-          font-size: 14px;
-          color: #8c8c8c;
-          line-height: 18px;
-          margin: 0 0 1rem;
-        }
+        .row4 {
+          display: flex !important;
+          align-content: flex-start;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 100%;
 
-        .featured {
-          border-top: 1px dotted #8c8c8c;
-          padding-top: 1rem;
+          div {
+            padding: 0 2px;
 
-          .row4 {
-            display: flex !important;
-            align-content: flex-start;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 100%;
+            p {
+              font-size: 16px !important;
+              color: #000 !important;
 
-            div {
-              padding: 0 2px;
-
-              p {
-                font-size: 16px !important;
-                color: #000 !important;
-
-                img {
-                  width: 23px;
-                  height: 17px;
-                }
+              img {
+                width: 23px;
+                height: 17px;
               }
             }
           }
         }
+      }
 
-        .cost {
-          padding-top: 1rem;
-          position: relative;
+      .cost {
+        padding-top: 1rem;
+        position: relative;
 
-          p {
-            font-size: 22px;
-            color: #1ac7cf;
-            font-weight: 700;
-          }
+        p {
+          font-size: 22px;
+          color: #1ac7cf;
+          font-weight: 700;
+        }
 
-          .view-btn {
-            position: absolute;
-            bottom: -20px;
-            right: -5px;
-            width: 117px;
-            height: 42px;
-            background-color: #1ac7cf;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 0;
-          }
+        .view-btn {
+          position: absolute;
+          bottom: -20px;
+          right: -5px;
+          width: 117px;
+          height: 42px;
+          background-color: #1ac7cf;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 0;
         }
       }
     }
   }
 }
-
+.slick-prev {
+  right: 182px!important;
+  background: red;
+  top: -74px !important;
+  width: 100px !important;
+  height: 100px !important;
+}
 .carousel-inner {
   .carousel-item {
     margin-bottom: 5rem;

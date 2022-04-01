@@ -64,39 +64,44 @@
   </div>
 </section>
 <!-- Carousel -->
-<section class="carousel pt-5 pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-9">
-        <h3 class="mb-3"><span>Featured</span> Properties</h3>
-        <p>Handpicked properties by our team.</p>
-      </div>
-      <div class="col-3 text-right">
-        <a
-          class="mb-3 mr-4"
-          href="#carouselExampleIndicators2"
-          role="button"
-          data-slide="prev"
-        >
-          <img src="../../assets/img/left_slide_arrow.png" alt="left_arrow" />
-        </a>
-        <a
-          class="mb-3"
-          href="#carouselExampleIndicators2"
-          role="button"
-          data-slide="next"
-        >
-          <img src="../../assets/img/right_slide_arrow.png" alt="right_arrow" />
-        </a>
+
+
+<section class="carousel property_slider">
+  <div class="slide">
+    <div class="container ">
+      <div class="row">
+        <div class="col-9">
+          <h3 class="mb-3"><span>Featured</span> Properties</h3>
+          <p>Handpicked properties by our team.</p>
+        </div>
+        <div class="col-3 text-right">
+          <a
+            
+            class="mb-3 mr-4"
+            aria-label="Previous"
+            href="#carouselExampleIndicators2"
+            role="button"
+            data-slide="prev"
+            type="button" style="display: none;"
+          >
+            <img src="../../assets/img/left_slide_arrow.png" alt="left_arrow" />
+          </a>
+          <a
+            class="mb-3"
+            href="#carouselExampleIndicators2"
+            role="button"
+            data-slide="next"
+            style="display: none;"
+          >
+            <img src="../../assets/img/right_slide_arrow.png" alt="right_arrow" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="property_slider">
-  <div class="container">
+  <div class="container p-0">
     <ngx-slick-carousel
-      class="carousel carousel_area"
+      class="carousel_area"
       #slickModal="slick-carousel"
       [config]="slideConfig1"
       (init)="slickInit()"
@@ -104,7 +109,7 @@
       (afterChange)="afterChange()"
       (beforeChange)="beforeChange()"
     >
-      <div class="" ngxSlickItem>
+      <div class="ngxSlickItem" ngxSlickItem>
         <div class="card">
           <img
             class="img-fluid"
@@ -147,7 +152,7 @@
           </div>
         </div>
       </div>
-      <div class="" ngxSlickItem>
+      <div class="ngxSlickItem" ngxSlickItem>
         <div class="card">
           <img
             class="img-fluid"
@@ -190,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="" ngxSlickItem>
+      <div class="ngxSlickItem" ngxSlickItem>
         <div class="card">
           <img
             class="img-fluid"
@@ -233,7 +238,7 @@
           </div>
         </div>
       </div>
-      <div class="" ngxSlickItem>
+      <div class="ngxSlickItem" ngxSlickItem>
         <div class="card">
           <img
             class="img-fluid"
@@ -276,7 +281,7 @@
           </div>
         </div>
       </div>
-      <div class="" ngxSlickItem>
+      <div class="ngxSlickItem" ngxSlickItem>
         <div class="card">
           <img
             class="img-fluid"

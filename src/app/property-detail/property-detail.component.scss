@@ -3,6 +3,11 @@
 .property-detail {
     padding: 3.5rem 0;
     background-color: $grayColor1;
+    
+
+    .property_des{
+        margin-bottom: 2rem;
+    }
 
     .detail-card {
         .bty-primary {
@@ -61,11 +66,15 @@
     }
     .description {
         .descp_card {
+            text-align: left;
+            width: 100%;
             ul {
                 list-style-type: none;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                text-align: left;
+                margin-left: -32px;
                 li {
                     display: inline-block;
                     color: #03101f;
@@ -349,4 +358,9 @@
         border-top: none;
         border-bottom: none;
     }
+}
+
+
+.carousel.carousel_area img{
+    height: 496px!important;
 }
