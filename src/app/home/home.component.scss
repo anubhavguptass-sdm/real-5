@@ -23,6 +23,11 @@
     font-size: 5rem;
     text-align: center;
     text-decoration: underline;
+
+    @include sm {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
   }
 }
 
@@ -38,11 +43,16 @@
     list-style: none;
     margin: 0 -0.5rem;
     margin-bottom: 4rem;
+    padding: 0;
 
     li {
       width: 20%;
       margin-bottom: 1rem;
       padding: 0 0.5rem;
+
+      @include sm {
+        width: 33.33%;
+      }
 
       img {
         width: 100%;
@@ -56,6 +66,11 @@
     color: $white;
     text-align: center;
     padding: 0 5rem;
+
+    @include sm {
+      padding: 0;
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -72,6 +87,10 @@
   .right_section {
     padding-left: 3rem;
     padding-top: 3rem;
+
+    @include sm {
+      padding-left: 0;
+    }
 
     p {
       color: $white;
@@ -109,6 +128,10 @@
 
         img {
           height: 135px;
+
+          @include sm {
+            height: 65px;
+          }
         }
       }
     }
@@ -182,7 +205,15 @@
     display: flex;
     justify-content: space-between;
 
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .register_left {
+      width: 100%;
+      text-align: center;
+
       h2 {
         color: $white;
         font-size: $font30;
@@ -205,12 +236,14 @@
     }
   }
 }
-.property_slider{
+
+.property_slider {
   margin: 0rem 0 3rem;
 }
+
 .carousel_area {
   margin: 1rem 0;
-  
+
   .slide {
     h3 {
       font-size: 40px;
@@ -222,7 +255,7 @@
         color: #1ac7cf;
       }
 
-      + p {
+      +p {
         font-size: 30px;
         color: #000000;
         opacity: 1;
@@ -241,19 +274,17 @@
       }
     }
   }
+
   .carousel.slide {
     margin-top: 0rem;
   }
 
   .card {
     border: none;
-    
-    
-
     padding: 0 10px;
 
-    > img {
-      width: 100%!important;
+    >img {
+      width: 100% !important;
       height: 393px;
     }
 
@@ -264,7 +295,7 @@
       border: none;
       z-index: 10;
       background-color: #fff;
-      
+
 
       h6 {
         color: #1ac7cf;
@@ -340,13 +371,15 @@
     }
   }
 }
+
 .slick-prev {
-  right: 182px!important;
+  right: 182px !important;
   background: red;
   top: -74px !important;
   width: 100px !important;
   height: 100px !important;
 }
+
 .carousel-inner {
   .carousel-item {
     margin-bottom: 5rem;
@@ -387,6 +420,7 @@
     margin: 0 auto;
     padding: 0;
   }
+
   .calc_card {
     background: url("../../assets/img/mortgage.png") 0% 0% no-repeat padding-box;
 
@@ -425,6 +459,10 @@
       height: 60px;
       width: 231px;
       border-radius: 8px;
+
+      @include sm {
+        width: auto;
+      }
     }
   }
 }
@@ -433,6 +471,16 @@
   .container {
     border: 1px solid #e6e4e4;
   }
+
+  .form-control {
+    background-color: #fff;
+  }
+  .bg_map {
+    background-image: url('../../assets/img/map-img.PNG');
+    background-size: cover;
+    height: 100%;
+  }
+
   .prop_card {
     padding: 4rem 3rem;
 
@@ -492,7 +540,8 @@
 
     .setting {
       img {
-        padding-top: 15px;
+        width: 40px;
+        padding-top: 1rem;
       }
     }
   }
@@ -501,7 +550,7 @@
     border: none;
     margin-bottom: 2rem;
 
-    > img {
+    >img {
       width: 100%;
       height: 100%;
     }
@@ -582,9 +631,10 @@
           right: 0px;
           width: 92px;
           height: 32px;
+          border-radius: 0;
           background-color: #1ac7cf;
           color: #fff;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 700;
         }
       }
@@ -595,6 +645,10 @@
 .app_feature {
   background-color: #000;
   padding: 6rem;
+
+  @include sm {
+    padding: 5rem 0;
+  }
 
   h3 {
     font-size: 40px;
@@ -630,6 +684,11 @@
       li {
         color: #fff;
         font-size: 20px;
+
+        @include sm {
+          font-size: 1rem;
+        }
+
         span.timeline-circle {
           position: relative;
           border: 2px solid #1ac7cf;
@@ -646,14 +705,17 @@
           margin-right: 1rem;
         }
       }
+
       li.active {
         color: #1ac7cf;
         font-weight: 600;
+
         span.timeline-circle {
           background-color: #1ac7cf;
           border: 4px solid #7ee3e9;
         }
       }
+
       li:not(:first-of-type) {
         span.timeline-circle::before {
           position: absolute;
@@ -675,8 +737,14 @@
     img {
       width: 250px;
       height: 501px;
+
+      @include sm {
+        width: 100%;
+        height: auto;
+      }
     }
   }
+
   .text {
     display: flex;
     width: 100%;
@@ -684,10 +752,100 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
     p {
       font-size: 20px;
       text-align: left;
       color: #fff;
+    }
+  }
+}
+
+.modal-open .modal {
+  overflow: hidden !important;
+}
+
+.modal {
+
+  .modal-content {
+    width: 654px;
+    height: 637px;
+
+    .close {
+      top: -2rem;
+      right: -2rem;
+      font-size: 48px;
+      position: absolute;
+      color: #fff;
+    }
+
+    .modal-header {
+      .btn-apply {
+        width: 594px;
+        height: 70px;
+        background-color: #000;
+      }
+    }
+
+    .modal-body {
+      padding: 15px 30px;
+
+      .grey-box {
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 240px;
+        padding: 28px;
+        margin: 17px 0 19px;
+
+        .image {
+          text-align: center;
+          margin-bottom: 23px;
+
+          img {
+            width: 122px;
+            height: 112px;
+            margin: 0 auto;
+          }
+        }
+
+        h5 {
+          color: #03101F;
+          font-size: 22px;
+          font-weight: 500;
+          text-align: center;
+          line-height: 1;
+        }
+
+        p {
+          color: #9E9E9E;
+          font-size: 18px;
+          text-align: center;
+          line-height: 1;
+        }
+      }
+
+      .wh-box {
+        width: 521px;
+        height: 380px;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+          font-size: 16px;
+          color: #03101F;
+          text-align: center;
+          margin-bottom: 51px;
+        }
+
+        .btn-save {
+          width: 308px !important;
+          height: 59px !important;
+          margin: 0 auto !important;
+          border-radius: 6px;
+          background-color: #1AC7CF;
+
+        }
+      }
     }
   }
 }

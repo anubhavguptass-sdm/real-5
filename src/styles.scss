@@ -35,9 +35,11 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 36px;
+
   strong {
     font-weight: 700;
   }
+
   @include sm {
     font-size: 24px;
     line-height: 32px;
@@ -47,9 +49,11 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 30px;
+
   strong {
     font-weight: 700;
   }
+
   @include sm {
     font-size: 24px;
     line-height: 32px;
@@ -59,6 +63,7 @@ h3 {
 h4 {
   font-size: 32px;
   line-height: 40px;
+
   @include sm {
     font-size: 24px;
     line-height: 32px;
@@ -74,12 +79,15 @@ h6 {
   font-size: 18px;
   line-height: 24px;
 }
+
 a {
   color: $primaryColor;
 }
+
 .form-group {
   margin-bottom: 1.4rem;
 }
+
 .form-control {
   border: 1px solid #dcdcdc;
   background-color: $grayColor3;
@@ -90,9 +98,11 @@ a {
 
 .input-icon {
   position: relative;
+
   .form-control {
     padding-left: 75px;
   }
+
   em {
     position: absolute;
     left: 30px;
@@ -140,12 +150,12 @@ a {
 }
 
 /* On mouse-over, add a grey background color */
-.container_c:hover input ~ .checkmark_c {
+.container_c:hover input~.checkmark_c {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container_c input:checked ~ .checkmark_c {
+.container_c input:checked~.checkmark_c {
   background-color: $white;
   border-color: $primaryColor;
 }
@@ -158,7 +168,7 @@ a {
 }
 
 /* Show the checkmark when checked */
-.container_c input:checked ~ .checkmark_c:after {
+.container_c input:checked~.checkmark_c:after {
   display: block;
 }
 
@@ -174,22 +184,26 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /* Custom Checkbox */
 .breadcrumb-nav {
   .breadcrumb {
     background-color: #fff;
     padding: 1rem 0;
     margin: 0;
+
     li a {
       color: #8c8c8c;
       font-size: 1rem;
     }
   }
-  .breadcrumb-item + .breadcrumb-item::before {
+
+  .breadcrumb-item+.breadcrumb-item::before {
     content: ">";
     font-family: monospace;
   }
 }
+
 .btn-primary {
   background-color: #1ac7cf;
   border-color: #1ac7cf;
@@ -198,6 +212,7 @@ a {
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
+
   &:focus,
   &:hover {
     background-color: #1ac7cf;
