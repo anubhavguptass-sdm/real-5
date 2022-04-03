@@ -70,11 +70,11 @@
   <div class="slide">
     <div class="container ">
       <div class="row">
-        <div class="col-9">
+        <div class="col-md-9">
           <h3 class="mb-3"><span>Featured</span> Properties</h3>
           <p>Handpicked properties by our team.</p>
         </div>
-        <div class="col-3 text-right">
+        <div class="col-md-3 text-right">
           <a
             
             class="mb-3 mr-4"
@@ -82,7 +82,7 @@
             href="#carouselExampleIndicators2"
             role="button"
             data-slide="prev"
-            type="button" style="display: none;"
+            type="button"
           >
             <img src="../../assets/img/left_slide_arrow.png" alt="left_arrow" />
           </a>
@@ -91,7 +91,7 @@
             href="#carouselExampleIndicators2"
             role="button"
             data-slide="next"
-            style="display: none;"
+            
           >
             <img src="../../assets/img/right_slide_arrow.png" alt="right_arrow" />
           </a>
@@ -433,7 +433,7 @@
 <section class="find_prop">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-8 col-sm-12">
         <div class="prop_card">
           <h4>Find <span>Properties</span></h4>
           <form>
@@ -478,7 +478,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6 col-sm-12">
                 <div class="card">
                   <img
                     class="img-fluid"
@@ -528,7 +528,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-sm-12">
                 <div class="card">
                   <img
                     class="img-fluid"
@@ -580,7 +580,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6 col-sm-12">
                 <div class="card">
                   <img
                     class="img-fluid"
@@ -630,7 +630,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-sm-12">
                 <div class="card">
                   <img
                     class="img-fluid"
@@ -684,7 +684,7 @@
           </form>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-sm-12">
         <div class="bg_map" id="map"></div>
       </div>
     </div>
@@ -695,7 +695,7 @@
     <h3>App <span>Feature</span></h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="row">
-      <div class="col-7 col-md-4">
+      <div class="col-7 col-md-7 col-lg-4">
         <div class="info-timeline">
           <ul>
             <li><span class="timeline-circle"></span> Get Property</li>
@@ -706,12 +706,12 @@
           </ul>
         </div>
       </div>
-      <div class="col-5 col-md-4">
+      <div class="col-5 col-md-5 col-lg-4">
         <div class="mobile_img">
           <img src="../../assets/img/mobile.png" alt="mobile image" />
         </div>
       </div>
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-12 col-lg-4">
         <div class="text">
           <p>
             Enjoy your ride. Follow all traffic rules, stick to the streets &
@@ -767,7 +767,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-header"  style="padding: 10px">
-        <button type="button" class="btn btn-primary btn-apply">Save changes</button>
+        <button type="button" class="btn btn-primary btn-apply">Apply Now</button>
       </div>
       <div class="modal-body" style="padding: 15px 15px 0">
           <div class="grey-box">
@@ -779,7 +779,9 @@
           </div>
           <div class="wh-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend dapibus.</p>
-            <button type="button" class="btn btn-primary btn-save">Save changes</button>
+            <a routerLink="/login" fragment="register">
+            <button type="button" class="btn btn-primary btn-save">Get a Loan</button>
+          </a>
           </div>
           
       </div>

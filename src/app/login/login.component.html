@@ -38,7 +38,8 @@
                 Don't have an account? <a href="#">Register</a>
               </p>
             </form>
-            <form action="">
+            <form action="" class="register" [ ngClass ] = " myClassProp === true ? 'my-class- 
+            show' : ' my-class-hide ' ">
               <div class="row">
                 <div class="col">
                   <div class="form-group input-icon">
@@ -55,7 +56,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Full Name"
+                      placeholder="Last Name"
                     />
                     <em class="fa fa-user"></em>
                   </div>

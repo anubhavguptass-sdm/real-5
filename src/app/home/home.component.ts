@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  
   slideConfig1 = {"slidesToShow": 3, "slidesToScroll": 2, "autoPlay": true, "arrows": true, "dots": true};
+  currentSelection: boolean = true;
   
   constructor() { }
 
+  @ViewChild(LoginComponent) regComp: any;
+
   ngOnInit(): void {
+    if (this.currentSelection === false) { 
+      this.regComp.myClassProp = true;
+  }
+  
   }
 
   slickInit() {
@@ -29,4 +38,7 @@ export class HomeComponent implements OnInit {
   beforeChange() {
     // console.log('beforeChange');
   }
+
+  
 }
+

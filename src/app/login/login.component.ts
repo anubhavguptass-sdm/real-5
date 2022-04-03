@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   forgotPwdFlag: boolean = false;
-  loginRegisterFlag: boolean = false;
+  loginRegisterFlag: boolean = true;
 
   constructor() { }
 
