@@ -239,7 +239,7 @@
 
 .property_slider {
   margin: 5rem auto 3rem;
-  
+
   .slide {
     h3 {
       font-size: 40px;
@@ -258,11 +258,14 @@
         font-weight: 400;
       }
     }
+
     .text-right {
       margin-top: 2.5rem;
-      @include sm{
+
+      @include sm {
         margin-top: -4rem;
       }
+
       a {
         img {
           width: 50px !important;
@@ -276,7 +279,6 @@
 .carousel_area {
   margin: 1rem 0;
   width: 100%;
-  
 
   .carousel.slide {
     margin-top: 0rem;
@@ -377,7 +379,6 @@
 
 .slick-prev {
   right: 182px !important;
-  background: red;
   top: -74px !important;
   width: 100px !important;
   height: 100px !important;
@@ -473,8 +474,9 @@
 .find_prop {
   .container {
     border: 1px solid #e6e4e4;
-    .row{
-      div:nth-child(2){
+
+    .row {
+      div:nth-child(2) {
         padding-left: 0;
         padding-right: 0;
       }
@@ -484,11 +486,13 @@
   .form-control {
     background-color: #fff;
   }
+
   .bg_map {
     background-image: url('../../assets/img/map-img.PNG');
     background-size: cover;
     height: 100%;
-    @include tab{
+
+    @include tab {
       height: 400px !important;
     }
   }
@@ -598,7 +602,11 @@
         line-height: 18px;
         margin: 0 0 1rem;
       }
-
+      .row{
+        margin-left: 0;
+        margin-right: -15px;
+      }
+      
       .featured {
         border-top: 1px dotted #8c8c8c;
         padding-top: 1rem;
@@ -747,6 +755,7 @@
 
   .mobile_img {
     margin-bottom: 1rem;
+
     img {
       width: 250px;
       height: 501px;
