@@ -65,10 +65,9 @@
 </section>
 <!-- Carousel -->
 
-
 <section class="carousel property_slider">
   <div class="slide">
-    <div class="container ">
+    <div class="container">
       <div class="row">
         <div class="col-md-9">
           <h3 class="mb-3"><span>Featured</span> Properties</h3>
@@ -76,7 +75,6 @@
         </div>
         <div class="col-md-3 text-right">
           <a
-            
             class="mb-3 mr-4"
             aria-label="Previous"
             href="#carouselExampleIndicators2"
@@ -91,9 +89,11 @@
             href="#carouselExampleIndicators2"
             role="button"
             data-slide="next"
-            
           >
-            <img src="../../assets/img/right_slide_arrow.png" alt="right_arrow" />
+            <img
+              src="../../assets/img/right_slide_arrow.png"
+              alt="right_arrow"
+            />
           </a>
         </div>
       </div>
@@ -426,7 +426,13 @@
         ><span>culator</span>
       </h1>
       <button class="btn btn-black blue-btn mr-5">Mortgage Calculator</button>
-      <button class="btn btn-black blue-btn" data-toggle="modal" data-target="#apply-loan-modal">Loan Calculator</button>
+      <button
+        class="btn btn-black blue-btn"
+        data-toggle="modal"
+        data-target="#apply-loan-modal"
+      >
+        Loan Calculator
+      </button>
     </div>
   </div>
 </section>
@@ -730,60 +736,62 @@
         <h2>Become a Real Estate Agent</h2>
         <p>We only work with the best companies around the globe</p>
       </div>
-      <button class="btn btn-black" data-toggle="modal" data-target="#exampleModalCenter">Register Now</button>
+      <button
+        class="btn btn-black"
+        data-toggle="modal"
+        data-target="#exampleModalCenter"
+      >
+        Register Now
+      </button>
     </div>
   </div>
 </section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header"  style="padding: 10px">
-        <h6 class="modal-title" id="exampleModalLongTitle">Payment Remarks</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" style="padding: 15px 15px 0">
-        <div class="form-group">
-          <input type="text" class="form-control" name="txn_id"  required>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" #closebutton data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- apply now -->
-
-<div class="modal fade" id="apply-loan-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div
+  class="modal fade apply_loan_modal"
+  id="apply-loan-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
         <span aria-hidden="true">&times;</span>
       </button>
-      <div class="modal-header"  style="padding: 10px">
-        <button type="button" class="btn btn-primary btn-apply">Apply Now</button>
+      <div class="modal-header" style="padding: 10px">
+        <button type="button" class="btn btn-primary btn-apply">
+          Apply <span>Now</span>
+        </button>
       </div>
-      <div class="modal-body" style="padding: 15px 15px 0">
-          <div class="grey-box">
-            <div class="image">
-              <img src="../../assets/img/building-1.png" alt="image" />
-            </div>
-            <h5>Thomas Powell</h5>
-            <p>thomaspowell@gmail.com</p>
+      <div class="modal-body" style="padding: 15px">
+        <div class="grey-box">
+          <div class="image">
+            <img src="../../assets/img/building-1.png" alt="image" />
           </div>
-          <div class="wh-box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend dapibus.</p>
-            <a routerLink="/login" fragment="register">
-            <button type="button" class="btn btn-primary btn-save">Get a Loan</button>
+          <h5>Thomas Powell</h5>
+          <p>thomaspowell@gmail.com</p>
+        </div>
+        <div class="wh-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
+            ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend
+            dapibus.
+          </p>
+          <a routerLink="/login" fragment="register">
+            <button type="button" class="btn btn-primary btn-save">
+              Get a Loan
+            </button>
           </a>
-          </div>
-          
+        </div>
       </div>
     </div>
   </div>

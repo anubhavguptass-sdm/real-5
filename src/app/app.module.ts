@@ -15,6 +15,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { AboutComponent } from './about/about.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
+import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PropertyDetailComponent } from './property-detail/property-detail.compo
     PrivacyPolicyComponent,
     AboutComponent,
     WhoWeAreComponent,
-    PropertyDetailComponent
+    PropertyDetailComponent,
+    MeetReal5AgentComponent
   ],
   imports: [
     BrowserModule,

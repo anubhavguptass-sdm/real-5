@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'property-detail',
     component: PropertyDetailComponent
+  },
+  {
+    path: 'meet-real5-agent',
+    component: MeetReal5AgentComponent
   },
 ];
 
