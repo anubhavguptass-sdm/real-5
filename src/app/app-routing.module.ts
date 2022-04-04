@@ -9,6 +9,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'meet-real5-agent',
     component: MeetReal5AgentComponent
+  },
+  {
+    path: 'why-real5-agent',
+    component: WhyReal5AgentComponent
   },
 ];
 

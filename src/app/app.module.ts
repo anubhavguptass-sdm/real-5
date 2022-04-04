@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
 import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.component';
+import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.com
     AboutComponent,
     WhoWeAreComponent,
     PropertyDetailComponent,
-    MeetReal5AgentComponent
+    MeetReal5AgentComponent,
+    WhyReal5AgentComponent
   ],
   imports: [
     BrowserModule,

@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meet-real5-agent.component.scss']
 })
 export class MeetReal5AgentComponent implements OnInit {
-
-  forgotPwdFlag: boolean = false;
-  loginRegisterFlag: boolean = true;
-
+  
   constructor() { }
 
   ngOnInit(): void {
