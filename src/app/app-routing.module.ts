@@ -7,6 +7,7 @@ import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.com
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
+import { SellPropertyOnlineComponent } from './sell-property-online/sell-property-online.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'why-real5-agent',
     component: WhyReal5AgentComponent
+  },
+  {
+    path: 'sell-property-online',
+    component: SellPropertyOnlineComponent
   },
 ];
 
