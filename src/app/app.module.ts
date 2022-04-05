@@ -19,6 +19,8 @@ import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.com
 import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
 import { SellPropertyOnlineComponent } from './sell-property-online/sell-property-online.component';
 import { SellPropertyComponent } from './sell-property/sell-property.component';
+import { AgentProfileComponent } from './agent-profile/agent-profile.component';
+import { PropertyListComponent } from './property-list/property-list.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SellPropertyComponent } from './sell-property/sell-property.component';
     MeetReal5AgentComponent,
     WhyReal5AgentComponent,
     SellPropertyOnlineComponent,
-    SellPropertyComponent
+    SellPropertyComponent,
+    AgentProfileComponent,
+    PropertyListComponent
   ],
   imports: [
     BrowserModule,
