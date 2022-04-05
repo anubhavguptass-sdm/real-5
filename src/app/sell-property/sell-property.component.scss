@@ -1,0 +1,59 @@
+@import "../../assets/scss/variable.scss";
+
+.sell_roperty {
+  padding: 0 0 3.5rem 0;
+  background-color: $grayColor1;
+
+  .sell_box {
+    height: 664px;
+    width: 709px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .card {
+      z-index: 1;
+      padding: 2.5rem 2rem;
+      box-shadow: 0px 0px 28px #0000000F;
+      border-radius: 19px;
+      h3{
+          font-size: 2.25rem;
+          color: #03101F;
+          font-weight: 600;
+          margin-bottom: 1.5rem;
+      }
+      p{
+          font-size: 18px;
+          color: #03101F;
+          margin-right: 4rem;
+          margin-bottom: 3rem;
+          font-weight: 500;
+      }
+      form{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .form-group{
+            width: 70%;
+            margin: 0;
+            position: relative;
+            i{
+                position: absolute;
+                top: 28px;
+                left: 10px;
+            }
+        }
+      }
+      
+      .btn-primary{
+          width: 25%;
+      }
+    }
+  }
+
+  img {
+    height: 664px;
+    width: 100%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../assets/scss/variable.scss";
+
+.login_section {
+    padding: 3.5rem 0;
+    background-color: $grayColor1;
+    .login_card {
+        padding: 3rem 4rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 28px #0000000F;
+        .btn-primary {
+            height: 80px;
+            border-radius: 6px;
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+            font-size: $font20;
+            font-weight: $bold;
+            color: $white;
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+        h6 {
+            font-size: $font20;
+            font-weight: $bold;
+        }
+        .d-flex {
+            label {
+                margin-right: 1.5rem;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.meet_head {
+    text-align: center;
+    margin-bottom: 3rem;
+    h2 {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

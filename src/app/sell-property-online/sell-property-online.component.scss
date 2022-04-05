@@ -1,0 +1,179 @@
+@import "../../assets/scss/variable.scss";
+
+.sell_roperty {
+  background-color: $grayColor1;
+  padding: 2rem 0;
+
+  .left-panel {
+
+    padding: 1rem;
+
+    h3 {
+      font-size: 35px;
+      color: #03101F;
+      font-weight: 600;
+
+    }
+
+    p {
+      font-size: 18px;
+      color: #03101F;
+      margin-right: 6rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0px;
+      margin-top: 37px;
+      margin-bottom: 43px;
+
+      li {
+        font-size: 18px;
+        color: #03101F;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      ::before {
+        content: url('../../assets/img/bell.png');
+        margin-right: 16px;
+      }
+    }
+
+    .btn {
+      margin: 1rem auto;
+    }
+
+    .btn-person {
+      width: 100%;
+      background-color: #fff;
+      color: #1AC7CF;
+      font-size: 16px;
+      height: 72px;
+      border: 1px solid #1AC7CF;
+    }
+
+    .btn-video {
+      width: 100%;
+      background-color: #fff;
+      color: #DCDCDC;
+      font-size: 16px;
+      height: 72px;
+      border: 1px solid #DCDCDC;
+    }
+
+    .btn-schedule {
+      width: 100%;
+      height: 65px;
+    }
+
+    p:last-child {
+      text-align: center;
+      margin-right: 0;
+      font-size: 18px;
+      font-weight: 500;
+
+      span {
+        color: #1AC7CF;
+      }
+    }
+  }
+
+  .right-panel {
+    width: 689px;
+
+    background-color: #fff;
+    padding: 24px 22px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 28px #0000000F;
+
+    >div>div>div {
+
+      >img {
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+      }
+    }
+
+    .price {
+      p {
+        font-size: 18px;
+        color: #03101F;
+        margin-top: .5rem;
+      }
+
+      p:last-child {
+        font-size: 25px;
+        color: #1AC7CF;
+        font-weight: 600;
+      }
+    }
+
+    .aprt_detail {
+      border-top: 1px solid #DCDCDC;
+      border-bottom: 1px solid #DCDCDC;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+
+      h5 {
+        font-size: 25px;
+        font-weight: 500;
+        color: #03101F;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #03101F;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        align-items: flex-start;
+        margin-right: 4rem;
+        margin-bottom: 1rem;
+
+        li {
+          font-size: 16px;
+          color: #03101F;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .days {
+      h4 {
+        font-size: 25px;
+        color: #03101F;
+        font-weight: 600;
+      }
+
+      p:first-of-type {
+        font-size: 16px;
+        color: #9E9E9E;
+      }
+
+      .details {
+        table {
+          width: 100%;
+
+          td {
+            font-size: 20px;
+            color: #03101F;
+            font-weight: 400;
+            padding-bottom: .25rem;
+          }
+
+          td:last-child {
+            font-weight: 600;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,6 @@
   </div>
 </nav>
 
-
 <section class="property-detail">
   <div class="property_des">
     <div class="container">
@@ -29,7 +28,13 @@
         <div class="col-lg-3 col-md-12 col-sm-12">
           <div class="price">
             <p>$130,000</p>
-            <button class="btn bty-primary btn-big">Schedule a Tour</button>
+            <button
+              class="btn bty-primary btn-big"
+              data-toggle="modal"
+              data-target="#schedule-tour"
+            >
+              Schedule a Tour
+            </button>
           </div>
         </div>
       </div>
@@ -64,27 +69,27 @@
           >
             <div class="image" ngxSlickItem>
               <img
-              src="../../assets/img/building-1.png"
-              class="d-block w-100"
-              alt="..."
-            />
+                src="../../assets/img/building-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="image" ngxSlickItem>
               <img
-              src="../../assets/img/building-2.png"
-              class="d-block w-100"
-              alt="..."
-            />
+                src="../../assets/img/building-2.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="image" ngxSlickItem>
               <img
-              src="../../assets/img/building-1.png"
-              class="d-block w-100"
-              alt="..."
-            />
+                src="../../assets/img/building-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </ngx-slick-carousel>
-          
+
           <div class="quick_info">
             <h4>Quick Info</h4>
             <div class="quick-card">
@@ -281,20 +286,26 @@
                           <div class="col-lg-5 col-md-5 col-sm-12">
                             <img src="../../assets/img/pin.png" /> Address:
                           </div>
-                          <div class="col-lg-7 col-md-7 col-sm-12">1350 Arbutus Drive, LD</div>
+                          <div class="col-lg-7 col-md-7 col-sm-12">
+                            1350 Arbutus Drive, LD
+                          </div>
                         </div>
                         <div class="row">
                           <div class="col-5 col-md-5 col-sm-12">
                             <img src="../../assets/img/phone-call).png" />
                             Phone:
                           </div>
-                          <div class="col-lg-7 col-md-7 col-sm-12">+1 602-862-1673</div>
+                          <div class="col-lg-7 col-md-7 col-sm-12">
+                            +1 602-862-1673
+                          </div>
                         </div>
                         <div class="row">
                           <div class="col-5 col-md-5 col-sm-12">
                             <img src="../../assets/img/email.png" /> Email:
                           </div>
-                          <div class="col-lg-7 col-md-7 col-sm-12">hello@property.com</div>
+                          <div class="col-lg-7 col-md-7 col-sm-12">
+                            hello@property.com
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -309,3 +320,138 @@
   </div>
 </section>
 <app-footer></app-footer>
+
+<!-- Modal -->
+<div
+  class="modal schedule_modal fade"
+  id="schedule-tour"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="schedule-tour"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-header" style="padding: 10px">
+        <button type="button" class="btn btn-primary btn-apply">
+          Schedule a <span>Tour</span>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 15px">
+        <div class="wh-box">
+          <div class="row">
+            <div class="col-12">
+              <label for="" class="control-label">Pick a Date</label>
+              <div class="form-group input-icon">
+                <input
+                  type="date"
+                  class="form-control"
+                />
+                <img src="../../assets/img/calendar-date.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12">              
+              <label for="" class="control-label">How would you like to tour?</label>
+            </div>
+            <div class="col-6">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tour in Person"
+                />
+                <img src="../../assets/img/hand-shake.svg" alt="">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tour via Video Chat"
+                />
+                <img src="../../assets/img/video-calling.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="" class="control-label">Pick a Time</label>
+              <div class="form-group input-icon">
+                <input
+                  type="time"
+                  class="form-control"
+                />
+                <img src="../../assets/img/calendar-cock.svg" alt="">
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-save">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="row" *ngIf="false">
+            <div class="col-12">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                />
+                <em class="fa fa-user"></em>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                />
+                <em class="fa fa-user"></em>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                />
+                <em class="fa fa-envelope-o"></em>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group input-icon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Phone"
+                />
+                <em class="fa fa-phone"></em>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group input-icon">
+                <textarea class="form-control" placeholder="Is there anything else we should know? (Optional)" rows="6" style="height: auto;"></textarea>
+                <em class="fa fa-user"></em>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-save">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
