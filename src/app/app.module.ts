@@ -21,6 +21,7 @@ import { SellPropertyOnlineComponent } from './sell-property-online/sell-propert
 import { SellPropertyComponent } from './sell-property/sell-property.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { PropertyListComponent } from './property-list/property-list.component';
+import { AgentListComponent } from './agent-list/agent-list.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PropertyListComponent } from './property-list/property-list.component';
     SellPropertyOnlineComponent,
     SellPropertyComponent,
     AgentProfileComponent,
-    PropertyListComponent
+    PropertyListComponent,
+    AgentListComponent
   ],
   imports: [
     BrowserModule,

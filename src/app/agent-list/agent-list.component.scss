@@ -1,0 +1,106 @@
+@import "../../assets/scss/variable.scss";
+
+.paginator .pagination {
+    background-color: $grayColor1;
+}
+
+.paginator .pagination {
+    padding: 1rem 0 0;
+
+    a {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+.paginator .pagination a.active {
+    color: #1ac7cf;
+    font-weight: 700;
+}
+.property_search {
+    background-color: #000;
+    padding: 1rem 0;
+    .form-control {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        height: 60px;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    .search_bar {
+        display: inline-block;
+        width: 100%;
+
+        .has-search .form-control {
+            padding-left: 1.375rem;
+            padding-right: 3.375rem;
+            position: relative;
+        }
+
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            pointer-events: none;
+            color: #fff;
+            right: 20px;
+            top: 10px;
+        }
+    }
+
+    .setting {
+        text-align: center;
+        img {
+            width: 40px;
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+.agent_list {
+    padding: 4rem 0;
+    .agent_area {
+        .agent_card {
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid #e6e6e6;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            img {
+                width: 110px;
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 1rem;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 1rem;
+                border-bottom: 1px dashed #e6e6e6;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                img {
+                    width: 16px;
+                }
+            }
+            p {
+                strong {
+                    font-weight: 600;
+                }
+            }
+            .btn {
+                border-radius: 0;
+                padding: 0.75rem 1rem;
+            }
+        }
+    }
+}

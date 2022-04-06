@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'property-list',
     component: PropertyListComponent
+  },
+  {
+    path: 'agent-list',
+    component: AgentListComponent
   },
 ];
 
