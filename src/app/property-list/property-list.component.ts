@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./property-list.component.scss']
 })
 export class PropertyListComponent implements OnInit {
-
+  mapAreaFlag: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  viewMap() {
+    this.mapAreaFlag = !this.mapAreaFlag;
   }
 
 }

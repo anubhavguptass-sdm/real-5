@@ -9,7 +9,9 @@
 
 .real-navbar {
   background-color: $textBlack1;
-
+  .container {
+    max-width: 100%;
+  }
   .navbar-brand {
     img {
       width: 70px;
