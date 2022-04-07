@@ -9,7 +9,7 @@ import { LoginComponent } from '../login/login.component';
 export class HomeComponent implements OnInit {
 
   
-  slideConfig1 = {"slidesToShow": 3, "slidesToScroll": 2, "autoPlay": true, "arrows": true, "dots": true};
+  slideConfig1 = {"slidesToShow": 3, "slidesToScroll": 1, "centerMode": false, "autoPlay": true, "arrows": true, "dots": false};
   currentSelection: boolean = true;
   
   constructor() { }
