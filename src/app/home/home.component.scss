@@ -877,3 +877,67 @@
     }
   }
 }
+
+
+.mortgage_calc {
+  .modal-dialog {
+    max-width: 1001px !important;
+  }
+  .input-group-text{
+    width: 170px;
+  }
+  .form-control{
+    background-color: #fff;
+  }
+  .btn-save {
+    width: 20rem !important;
+    height: 3.5rem !important;
+    margin: 1rem auto 2rem;
+    border-radius: 6px;
+    background-color: #1ac7cf;
+  }
+}
+
+.advance-search {
+  h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    span{
+      color: #1AC7CF;
+
+    }
+  }
+  .modal-content{
+    padding: 2rem 4rem !important;
+    background-color: #000;
+    color: #D1D1D1;
+    border: 1px solid #D1D1D1;
+  }
+  .modal-dialog {
+    max-width: 80vw !important;
+  }
+  .input-group-text{
+    width: 170px;
+  }
+  .form-control{
+    background-color: #fff;
+  }
+  .search-bar{
+    position: relative;
+    margin-top: -5px;
+    .fa-search{
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      color: #9e9e9e;
+     }
+    }
+  .btn-save {
+    width: 20rem !important;
+    height: 3.5rem !important;
+    margin: 1rem auto 2rem;
+    border-radius: 6px;
+    background-color: #1ac7cf;
+  }
+}
