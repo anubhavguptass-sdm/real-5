@@ -192,6 +192,15 @@ a {
 }
 
 /* Custom Checkbox */
+
+.advance-search .container_c input:checked ~ .checkmark_c {
+  background-color: transparent;
+  border-color: #fff;
+}
+.advance-search .container_c .checkmark_c:after {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+}
 .breadcrumb-nav {
   .breadcrumb {
     background-color: #fff;

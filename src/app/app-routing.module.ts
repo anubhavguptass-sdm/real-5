@@ -12,6 +12,7 @@ import { PropertyDetailComponent } from './property-detail/property-detail.compo
 import { PropertyListComponent } from './property-list/property-list.component';
 import { SellPropertyOnlineComponent } from './sell-property-online/sell-property-online.component';
 import { SellPropertyComponent } from './sell-property/sell-property.component';
+import { SwipeComponent } from './swipe/swipe.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
@@ -76,6 +77,10 @@ const routes: Routes = [
   {
     path: 'agent-list',
     component: AgentListComponent
+  },
+  {
+    path: 'swipe',
+    component: SwipeComponent
   },
 ];
 

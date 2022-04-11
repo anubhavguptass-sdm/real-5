@@ -921,7 +921,11 @@
     width: 170px;
   }
   .form-control{
-    background-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
   }
   .search-bar{
     position: relative;

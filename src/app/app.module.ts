@@ -22,6 +22,7 @@ import { SellPropertyComponent } from './sell-property/sell-property.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { PropertyListComponent } from './property-list/property-list.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
+import { SwipeComponent } from './swipe/swipe.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AgentListComponent } from './agent-list/agent-list.component';
     SellPropertyComponent,
     AgentProfileComponent,
     PropertyListComponent,
-    AgentListComponent
+    AgentListComponent,
+    SwipeComponent
   ],
   imports: [
     BrowserModule,
