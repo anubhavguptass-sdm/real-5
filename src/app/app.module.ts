@@ -23,6 +23,7 @@ import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { PropertyListComponent } from './property-list/property-list.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { SwipeComponent } from './swipe/swipe.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SwipeComponent } from './swipe/swipe.component';
     AgentProfileComponent,
     PropertyListComponent,
     AgentListComponent,
-    SwipeComponent
+    SwipeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
