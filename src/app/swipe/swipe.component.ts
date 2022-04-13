@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { SwiperOptions } from 'swiper';
+// import Swiper core and required modules
+import SwiperCore, { EffectCards } from "swiper";
+  
+SwiperCore.use([EffectCards]);
 
 @Component({
   selector: 'app-swipe',
@@ -9,7 +14,13 @@ export class SwipeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onSwiper([swiper]: any) {
+    console.log(swiper);
+  }
+  onSlideChange() {
+    console.log('slide change');
   }
 
 }

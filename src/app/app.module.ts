@@ -24,6 +24,7 @@ import { PropertyListComponent } from './property-list/property-list.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

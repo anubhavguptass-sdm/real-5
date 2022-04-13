@@ -114,7 +114,6 @@ a {
     position: absolute;
     left: 30px;
     top: 25px;
-    
   }
 }
 
@@ -156,12 +155,12 @@ a {
 }
 
 /* On mouse-over, add a grey background color */
-.container_c:hover input~.checkmark_c {
+.container_c:hover input ~ .checkmark_c {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container_c input:checked~.checkmark_c {
+.container_c input:checked ~ .checkmark_c {
   background-color: $white;
   border-color: $primaryColor;
 }
@@ -174,7 +173,7 @@ a {
 }
 
 /* Show the checkmark when checked */
-.container_c input:checked~.checkmark_c:after {
+.container_c input:checked ~ .checkmark_c:after {
   display: block;
 }
 
@@ -213,7 +212,7 @@ a {
     }
   }
 
-  .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
     font-family: monospace;
   }
@@ -236,7 +235,7 @@ a {
 }
 .carousel_area {
   .slick-next {
-    background-image: url('assets/img/right_slide_arrow.png');
+    background-image: url("assets/img/right_slide_arrow.png");
     width: 50px;
     height: 50px;
     background-size: 100%;
@@ -248,7 +247,7 @@ a {
     }
   }
   .slick-prev {
-    background-image: url('assets/img/left_slide_arrow.png');
+    background-image: url("assets/img/left_slide_arrow.png");
     width: 50px;
     height: 50px;
     background-size: 100%;
@@ -261,3 +260,67 @@ a {
     }
   }
 }
+
+@import "~swiper/css";
+@import "~swiper/css/effect-cards";
+
+.property_swiper {
+  padding: 4rem 0;
+}
+.mySwiper {
+  &.swiper {
+    width: 400px;
+    height: 550px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fff;
+}
+
+// .swiper-slide:nth-child(1n) {
+//   background-color: rgb(206, 17, 17);
+// }
+
+// .swiper-slide:nth-child(2n) {
+//   background-color: rgb(0, 140, 255);
+// }
+
+// .swiper-slide:nth-child(3n) {
+//   background-color: rgb(10, 184, 111);
+// }
+
+// .swiper-slide:nth-child(4n) {
+//   background-color: rgb(211, 122, 7);
+// }
+
+// .swiper-slide:nth-child(5n) {
+//   background-color: rgb(118, 163, 12);
+// }
+
+// .swiper-slide:nth-child(6n) {
+//   background-color: rgb(180, 10, 47);
+// }
+
+// .swiper-slide:nth-child(7n) {
+//   background-color: rgb(35, 99, 19);
+// }
+
+// .swiper-slide:nth-child(8n) {
+//   background-color: rgb(0, 68, 255);
+// }
+
+// .swiper-slide:nth-child(9n) {
+//   background-color: rgb(218, 12, 218);
+// }
+
+// .swiper-slide:nth-child(10n) {
+//   background-color: rgb(54, 94, 77);
+// }

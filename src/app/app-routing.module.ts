@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { HomeComponent } from './home/home.component';
@@ -81,6 +82,16 @@ const routes: Routes = [
   {
     path: 'swipe',
     component: SwipeComponent
+  },
+  {
+    path: 'admin',
+    component: DashboardComponent,
+    children: [
+      // {
+      //   path: '',
+      //   component: 
+      // }
+    ]
   },
 ];
 
