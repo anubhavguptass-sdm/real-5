@@ -11,11 +11,11 @@ export class MyProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  selectedItem = 1;
   showTab = 1;
   tabToggle(index: any){
     this.showTab =index;
-    index.active = !index.active
+    this.selectedItem = index;
     
   }
 

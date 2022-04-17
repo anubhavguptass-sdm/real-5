@@ -36,38 +36,38 @@
     align-content: center;
 
     h6 {
-        padding: 0;
-        margin: 0;
-        border: none;
-        font-weight: 700;
-      }
-    
-      button {
-        margin: 0;
-        font-weight: 400;
-      }
-    
-       .btn-primary {
-        background-color: #E7FEFF;
-        color: #000;
-        border-color: #E7FEFF;
-      }
-    
-      i {
-        font-size: 1.2rem;
-        padding-top: 10px;
-        color: #000;
-      }
-    
-      .badge {
-        width: 10px;
-        height: 10px;
-        background-color: #1AC7CF;
-        border-radius: 20px;
-        position: absolute;
-        top: 10px;
-        right: 14px;
-      }
+      padding: 0;
+      margin: 0;
+      border: none;
+      font-weight: 700;
+    }
+
+    button {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .btn-primary {
+      background-color: #E7FEFF;
+      color: #000;
+      border-color: #E7FEFF;
+    }
+
+    i {
+      font-size: 1.2rem;
+      padding-top: 10px;
+      color: #000;
+    }
+
+    .badge {
+      width: 10px;
+      height: 10px;
+      background-color: #1AC7CF;
+      border-radius: 20px;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+    }
 
   }
 
@@ -103,7 +103,7 @@
           font-size: 1rem;
           padding-left: .5rem;
           white-space: nowrap;
-
+          cursor: pointer;  
           i {
             margin-right: .25rem;
             color: #8C8C8C;
@@ -113,13 +113,18 @@
         li.active {
           color: #1AC7CF;
           border-left: 4px solid #1AC7CF;
+          i{
+              color: #1AC7CF;
+          }
         }
       }
     }
-
+    .inbox{
+        width: 100%;
+    }
     .scroll {
 
-      overflow-y: scroll;
+      overflow-y: auto;
 
       height: 50vw;
       width: 100%;
@@ -237,7 +242,8 @@
     }
 
     .right-panel {
-        height: 100%;
+      height: 100%;
+
       .user-card {
         padding-bottom: 2rem;
         border-bottom: 1px solid #8C8C8C;
@@ -305,12 +311,14 @@
         border: 1px solid #8C8C8C;
         border-radius: 10px;
         position: absolute;
-            bottom: 0;
-            width: 92%;
+        bottom: 0;
+        width: 92%;
+
         .form-group {
           border: none;
           border-radius: 10px;
           margin: 0;
+
           textarea.form-control {
             border: none;
             border-radius: 10px !important;
@@ -323,18 +331,276 @@
             box-shadow: none !important;
           }
         }
-        .bottom-area{
+
+        .bottom-area {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 5px;
+          padding: 5px;
+          border-top: 1px solid #8C8C8C;
+
+          .btn-primary {
+            padding: 2px 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .compose-box {
+      height: 100%;
+
+      >.btn-primary {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 10px;
+      }
+
+      form {
+        height: auto;
+
+        .compose-body {
+          height: auto;
+          border: 1px solid #dcdcdc;
+          border-radius: 2px;
+
+          .form-group {
+            height: auto;
+            margin-bottom: 0;
+
+            textarea {
+              resize: none;
+              height: auto;
+              background-color: #fff;
+              border: none;
+            }
+
+            textarea:focus {
+              box-shadow: none;
+              border-color: transparent;
+            }
+          }
+
+          .bottom-area {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0 5px;
             padding: 5px;
-            border-top: 1px solid #8C8C8C;
-            .btn-primary{
-                padding: 2px 10px;
+            border-top: 1px solid #dcdcdc;
+
+            .btn-primary {
+              padding: 2px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .compose-body:focus,
+        .compose-body:active,
+        .compose-body:focus {
+          border-color: #80bdff;
+          box-shadow: 0 0 0 0.2rem #007bff40;
+        }
+      }
+    }
+
+    .add-signature {
+      h4 {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 700;
+      }
+
+      form {
+        height: auto;
+
+        .compose-body {
+          height: auto;
+          border: 1px solid #dcdcdc;
+          border-radius: 2px;
+
+          .form-group {
+            height: auto;
+            margin-bottom: 0;
+
+            textarea {
+              resize: none;
+              height: auto;
+              background-color: #fff;
+              border: none;
+            }
+
+            textarea:focus {
+              box-shadow: none;
+              border-color: transparent;
+            }
+          }
+
+          .bottom-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 5px;
+            padding: 5px;
+            border-top: 1px solid #dcdcdc;
+
+            div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 60%;
+            }
+
+            .btn-primary {
+              padding: 2px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .saved-signature {
+      h4 {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 700;
+      }
+
+      .saved-sign {
+        background-color: $grayColor1;
+        padding: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        .sign{
+            h5 {
+                font-size: 1rem;
+                color: #000;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-top: 1rem;
+              }
+      
+              p {
+                color: #1AC7CF;
+                font-weight: 400;
+              }
+        }
+        .image {
+            img{
+                width: 20px;
             }
         }
       }
     }
   }
+
+  .add-signature {
+      h4 {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 700;
+      }
+
+      form {
+        height: auto;
+        .form-group{
+            input{
+                background-color: #fff;
+            }
+        }
+        .form-control:focus{
+            border-color: #8C8C8C;
+            box-shadow: none;
+        }
+        .compose-body {
+          height: auto;
+          border: 1px solid #dcdcdc;
+          border-radius: 2px;
+
+          .form-group {
+            height: auto;
+            margin-bottom: 0;
+
+            textarea {
+              resize: none;
+              height: auto;
+              background-color: #fff;
+              border: none;
+            }
+
+            textarea:focus {
+              box-shadow: none;
+              border-color: #8C8C8C !important;
+            }
+          }
+
+          .bottom-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 5px;
+            padding: 5px;
+            border-top: 1px solid #dcdcdc;
+
+            div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 60%;
+            }
+
+            .btn-primary {
+              padding: 2px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+        .compose-body:focus, .compose-body:active{
+            border-color: #8C8C8C !important;
+        }
+      }
+    }
+
+    .saved-response {
+      h4 {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 700;
+      }
+
+      .saved-sign {
+        background-color: $grayColor1;
+        padding: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        .sign{
+            h5 {
+                font-size: 1rem;
+                color: #000;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-top: 1rem;
+              }
+      
+              p {
+                color: #1AC7CF;
+                font-weight: 400;
+              }
+        }
+        .image {
+            img{
+                width: 20px;
+            }
+        }
+      }
+    }
 }
