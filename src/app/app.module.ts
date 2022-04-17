@@ -25,6 +25,11 @@ import { AgentListComponent } from './agent-list/agent-list.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { SwiperModule } from 'swiper/angular';
+import { AgentDashboardComponent } from './agent/agent-dashboard/agent-dashboard.component';
+import { FeedComponent } from './agent/feed/feed.component';
+import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
+import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
+import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,12 @@ import { SwiperModule } from 'swiper/angular';
     PropertyListComponent,
     AgentListComponent,
     SwipeComponent,
-    DashboardComponent
+    DashboardComponent,
+    AgentDashboardComponent,
+    FeedComponent,
+    MyLeadsComponent,
+    Real5LeadsComponent,
+    CRMEmailComponent
   ],
   imports: [
     BrowserModule,

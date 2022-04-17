@@ -4,6 +4,11 @@ import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
+import { AgentDashboardComponent } from './agent/agent-dashboard/agent-dashboard.component';
+import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
+import { FeedComponent } from './agent/feed/feed.component';
+import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
+import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MeetReal5AgentComponent } from './meet-real5-agent/meet-real5-agent.component';
@@ -92,6 +97,26 @@ const routes: Routes = [
       //   component: 
       // }
     ]
+  },
+  {
+    path: 'agent/agent-dashboard',
+    component: AgentDashboardComponent
+  },
+  {
+    path: 'agent/feed',
+    component: FeedComponent
+  },
+  {
+    path: 'agent/my-leads',
+    component: MyLeadsComponent
+  },
+  {
+    path: 'agent/real5-leads',
+    component: Real5LeadsComponent
+  },
+  {
+    path: 'agent/crm-email',
+    component: CRMEmailComponent
   },
 ];
 
