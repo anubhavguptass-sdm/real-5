@@ -31,6 +31,7 @@ import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
 import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whiteboard.component';
+import { AddLeadComponent } from './agent/add-lead/add-lead.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whitebo
     MyLeadsComponent,
     Real5LeadsComponent,
     CRMEmailComponent,
-    AgentWhiteboardComponent
+    AgentWhiteboardComponent,
+    AddLeadComponent
   ],
   imports: [
     BrowserModule,
