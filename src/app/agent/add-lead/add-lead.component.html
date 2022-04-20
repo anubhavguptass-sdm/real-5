@@ -355,6 +355,8 @@
 </div>
 <button class="btn btn-primary" data-toggle="modal" data-target="#inactive-acc">Inactive Acc</button>
 <button class="btn btn-primary" data-toggle="modal" data-target="#call-email">Call Email</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#request-accept">Request Accept</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#start-discussion">Start Discussion</button>
 
 <!-- Inactive Account Modal -->
 <div class="modal fade apply_loan_modal" id="inactive-acc" tabindex="-1" role="dialog"
@@ -407,6 +409,72 @@
           </div>
           <div class="col-lg-12">
               <button class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Request Accept Modal -->
+<div class="modal fade apply_loan_modal" id="request-accept" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 3rem">
+        <div class="row">
+          <div class="col-lg-12">
+            <h5 class="text-center"><strong>Are you sure you want to accept this request?</strong></h5>
+          </div>
+          <div class="col-lg-6">
+              <button class="btn btn-primary btn-block">Yes</button>
+          </div>
+          <div class="col-lg-6">
+              <button class="btn btn-primary btn-secondary btn-block">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Discussion Modal -->
+<div class="modal fade apply_loan_modal" id="start-discussion" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center" style="padding: 10px">
+        <h2>Start Discussion</h2>
+      </div>
+      <div class="modal-body" style="padding: 15px">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="" class="control-label">Topic Title</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="" class="control-label">Details</label>
+              <textarea name="" id="" rows="6" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input type="file">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label class="container_c"> Email when someone replies to this discussion
+                <input type="checkbox" checked="checked">
+                <span class="checkmark_c"></span>
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-12">
+              <button class="btn btn-primary btn-block">Start</button>
           </div>
         </div>
       </div>
