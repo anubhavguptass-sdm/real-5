@@ -5,6 +5,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AgentDashboardComponent } from './agent/agent-dashboard/agent-dashboard.component';
+import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whiteboard.component';
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { FeedComponent } from './agent/feed/feed.component';
 import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
@@ -117,6 +118,10 @@ const routes: Routes = [
   {
     path: 'agent/crm-email',
     component: CRMEmailComponent
+  },
+  {
+    path: 'agent/agent-whiteboard',
+    component: AgentWhiteboardComponent
   },
 ];
 
