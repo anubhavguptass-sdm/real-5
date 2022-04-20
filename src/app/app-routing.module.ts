@@ -6,6 +6,7 @@ import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AddLeadComponent } from './agent/add-lead/add-lead.component';
 import { AgentDashboardComponent } from './agent/agent-dashboard/agent-dashboard.component';
+import { AgentProfileComponent1 } from './agent/agent-profile/agent-profile.component';
 import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whiteboard.component';
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { FeedComponent } from './agent/feed/feed.component';
@@ -24,6 +25,7 @@ import { SwipeComponent } from './swipe/swipe.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhyReal5AgentComponent } from './why-real5-agent/why-real5-agent.component';
+
 
 const routes: Routes = [
   {
@@ -127,6 +129,10 @@ const routes: Routes = [
   {
     path: 'agent/add-lead',
     component: AddLeadComponent
+  },
+  {
+    path: 'agent/agent-profile',
+    component: AgentProfileComponent1
   },
 ];
 

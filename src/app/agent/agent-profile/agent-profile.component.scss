@@ -1,0 +1,128 @@
+@import "../../../assets/scss/variable.scss";
+
+.agent-profile {
+  padding: 0;
+  background-color: $grayColor1;
+.header-sec{
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    h4{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+  .profile_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 0rem;
+    width: 1010px;
+    background-color: #fff;
+    .left-card{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+        h6 {
+            border-bottom: 1px solid #9E9E9E;
+            font-size: 20px;
+            color: #000000;
+            padding: 0 0 20px;
+            font-weight: 700;
+            margin: 2rem auto;
+      
+          }
+      
+          .user_card {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #fff;
+            margin: 0 auto;
+            .profile_pic {
+              width: 154px;
+              height: 142px;
+              background: #F2F2F2 0% 0% no-repeat padding-box;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+      
+              i {
+                font-size: 6rem;
+                color: #D9D9D9;
+              }
+            }
+      
+            .btn-upload {
+              background-color: #1AC7CF !important;
+              height: 50px;
+              width: 112px;
+              color: #fff;
+              font-size: 16px;
+              margin: 0 20px 0 20px;
+              border: none;
+            }
+      
+            .btn-delete {
+              background-color: #EFEFEF !important;
+              height: 50px;
+              width: 112px;
+              color: #000;
+              font-size: 16px;
+              border: none;
+            }
+          }
+          .right-card{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              padding: 0;
+              p{
+                  font-size: 1rem;
+                   font-weight: 500; 
+              }  
+              .custom-switch{
+                  padding-left: 0 !important;
+                  label{
+                      padding: 0px 10px;
+                      font-size: 1rem;
+                      font-weight: 500;
+                  }
+                  label:first-of-type{
+                      padding: 0 50px !important;
+                  }
+                  
+              }
+          }
+    }
+  }
+  .user-form {
+    margin-top: 2rem;
+    width: 1010px;
+    background-color: #fff;
+    margin: 2rem auto 2rem;
+    padding: 1rem 0;
+
+    h4{
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-bottom: 1px solid #9E9E9E;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+
+    .btn-upload {
+      background-color: #1AC7CF !important;
+      height: 65px;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 1rem;
+      border: none;
+      float: right;
+      padding: 10px 50px;
+    }
+  }
+}
