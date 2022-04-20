@@ -30,6 +30,7 @@ import { FeedComponent } from './agent/feed/feed.component';
 import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
 import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
+import { AddLeadComponent } from './agent/add-lead/add-lead.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
     FeedComponent,
     MyLeadsComponent,
     Real5LeadsComponent,
-    CRMEmailComponent
+    CRMEmailComponent,
+    AddLeadComponent
   ],
   imports: [
     BrowserModule,
