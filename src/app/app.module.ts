@@ -32,6 +32,7 @@ import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whiteboard.component';
 import { AddLeadComponent } from './agent/add-lead/add-lead.component';
+import { AgentHeaderComponent } from './agent/agent-header/agent-header.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { AddLeadComponent } from './agent/add-lead/add-lead.component';
     Real5LeadsComponent,
     CRMEmailComponent,
     AgentWhiteboardComponent,
-    AddLeadComponent
+    AddLeadComponent,
+    AgentHeaderComponent
   ],
   imports: [
     BrowserModule,

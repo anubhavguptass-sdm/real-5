@@ -1,0 +1,92 @@
+@import "../../../assets/scss/variable.scss";
+
+
+.navbar-toggler-icon {
+  background-image: url('../../../assets/img/menu.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.real-navbar {
+  background-color: $textBlack1;
+  .container {
+    max-width: 100%;
+  }
+  .navbar-brand {
+    img {
+      width: 70px;
+
+      @include sm {
+        width: 40px;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+
+    .pre_approved {
+      color: white;
+      text-transform: $uppercase;
+      font-size: $font16;
+      font-weight: $medium;
+      text-align: center;
+      margin-right: 2rem;
+
+      @include sm {
+        margin-right: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      span {
+        font-size: $font12;
+      }
+    }
+
+    .navbar-nav {
+      li {
+        a {
+          color: white;
+          text-transform: $uppercase;
+          font-size: $font16;
+          font-weight: $medium;
+          height: 50px;
+          line-height: 50px;
+          padding: 0 0.75rem;
+
+          .search_icon {
+            width: 20px;
+          }
+        }
+        .profile_menu {
+            border: 1px solid #fff;
+            border-radius: 4px;
+            text-transform: capitalize;
+            img {
+                width: 20px;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .dropdown-menu {
+          background-color: $white;
+          padding: 0 0.5rem;
+          left: -2.5rem;
+
+          a {
+            border-bottom: 1px solid #ffffff82;
+            color: #888;
+            text-transform: capitalize;
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
