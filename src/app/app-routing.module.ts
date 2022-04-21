@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { UserListComponent } from './admin/user-list/user-list.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AddLeadComponent } from './agent/add-lead/add-lead.component';
@@ -95,12 +96,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: DashboardComponent,
-    children: [
-      // {
-      //   path: '',
-      //   component: 
-      // }
-    ]
+  },
+  {
+    path: 'admin/user-list',
+    component: UserListComponent
   },
   {
     path: 'agent/agent-dashboard',

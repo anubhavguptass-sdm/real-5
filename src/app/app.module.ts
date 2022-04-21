@@ -33,6 +33,8 @@ import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whiteboard.component';
 import { AddLeadComponent } from './agent/add-lead/add-lead.component';
 import { AgentHeaderComponent } from './agent/agent-header/agent-header.component';
+import { UserListComponent } from './admin/user-list/user-list.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { AgentHeaderComponent } from './agent/agent-header/agent-header.componen
     CRMEmailComponent,
     AgentWhiteboardComponent,
     AddLeadComponent,
-    AgentHeaderComponent
+    AgentHeaderComponent,
+    UserListComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
