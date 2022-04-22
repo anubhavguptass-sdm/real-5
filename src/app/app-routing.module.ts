@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
+import { AdminAgentListComponent } from './admin/agent-list/agent-list.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { LeadsListComponent } from './admin/leads-list/leads-list.component';
 import { UserListComponent } from './admin/user-list/user-list.component';
@@ -142,6 +143,10 @@ const routes: Routes = [
   {
     path: 'admin/feed',
     component: AdminFeedComponent
+  },
+  {
+    path: 'admin/agent-list',
+    component: AdminAgentListComponent
   },
 ];
 

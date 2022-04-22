@@ -37,6 +37,7 @@ import { UserListComponent } from './admin/user-list/user-list.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { LeadsListComponent } from './admin/leads-list/leads-list.component';
 import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
+import { AdminAgentListComponent } from './admin/agent-list/agent-list.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
     UserListComponent,
     SidebarComponent,
     LeadsListComponent,
-    AdminFeedComponent
+    AdminFeedComponent,
+    AdminAgentListComponent
   ],
   imports: [
     BrowserModule,

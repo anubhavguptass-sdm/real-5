@@ -1,3 +1,17 @@
+.page-content {
+  display: inline-block;
+  width: 100%;
+  padding: 5rem 1rem 1rem 15rem;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+.page_card {
+  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f, 0 5px 5px -3px #ebebeb33;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
 @import "../../../assets/scss/variable.scss";
 
 .agent-dashboard {
@@ -9,12 +23,12 @@
     border: none;
 
     .dashboard-sec {
-      width: 1230px;
+      width: 100%;
       margin: 0 auto;
 
       .row {
         background-color: #fff;
-        padding: .5rem .25rem;
+        padding: 0.5rem 0.25rem;
       }
 
       h6 {
@@ -49,7 +63,7 @@
     color: #fff;
     height: 100%;
     border-radius: 20px;
-    padding: 2rem .5rem 0;
+    padding: 2rem 0.5rem 0;
 
     .row {
       div {
@@ -84,7 +98,7 @@
   }
 
   .card-body {
-    border: 2px solid #1AC7CF;
+    border: 2px solid #1ac7cf;
     border-radius: 20px;
     padding: 1rem 1rem 0;
     height: 100%;
@@ -127,10 +141,8 @@
 }
 
 .agent-dash-card {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 1rem;
-
 
   .dis-flex {
     width: 100%;
@@ -138,7 +150,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-
   }
 
   .d-flex {
@@ -158,7 +169,6 @@
     .has-search .form-control {
       padding-left: 2.375rem;
       position: relative;
-
     }
 
     .has-search .form-control-feedback {
@@ -181,7 +191,6 @@
   }
 
   .property_data {
-    
     margin: 0 auto;
     background-color: #fff;
     overflow: hidden;
@@ -198,11 +207,11 @@
     }
 
     table {
-      width: 1500px;
-      thead{
+      width: 100%;
+      thead {
         background-color: rgb(236, 236, 236);
-        color: #8C8C8C;
-    }
+        color: #8c8c8c;
+      }
       tr {
         th {
           font-size: 16px !important;
@@ -223,15 +232,14 @@
 
           p {
             font-size: 14px;
-            color: #8C8C8C;
+            color: #8c8c8c;
             font-weight: 500;
-            margin-bottom: .25rem;
-
+            margin-bottom: 0.25rem;
           }
 
           p:nth-child(3) {
             font-size: 16px;
-            color: #1AC7CF;
+            color: #1ac7cf;
             font-weight: 700;
           }
 
@@ -258,7 +266,7 @@
 
           p {
             margin-bottom: 0;
-            color: #8C8C8C;
+            color: #8c8c8c;
             font-weight: 500;
 
             span {
@@ -268,7 +276,7 @@
 
           p:last-of-type {
             margin-top: 5px !important;
-            color: #8C8C8C;
+            color: #8c8c8c;
 
             img {
               margin-right: 5px;
@@ -298,22 +306,25 @@
           }
         }
         td:nth-child(2) {
-            font-weight: 700;
-            vertical-align: middle;
-          }  
-        td:nth-child(2), td:nth-child(3){
-            p:last-of-type{
-                color: #1AC7CF !important;
-            }
+          font-weight: 700;
+          vertical-align: middle;
         }
-        td:nth-child(4), td:nth-child(5), td:nth-child(6){
-            vertical-align: middle;
+        td:nth-child(2),
+        td:nth-child(3) {
+          p:last-of-type {
+            color: #1ac7cf !important;
+          }
+        }
+        td:nth-child(4),
+        td:nth-child(5),
+        td:nth-child(6) {
+          vertical-align: middle;
         }
         td:last-of-type {
-            vertical-align: middle;
-            text-align: left;
-          i{
-              color: red;
+          vertical-align: middle;
+          text-align: left;
+          i {
+            color: red;
           }
         }
       }
@@ -333,28 +344,27 @@
     width: 104px;
     height: 42px;
   }
-
 }
 
 .paginator .pagination {
-    background-color: $grayColor1;
-    width: 1140px;
-    margin: 0 auto;
-  }
+  background-color: $grayColor1;
+  width: 1140px;
+  margin: 0 auto;
+}
 
-  .paginator .pagination {
-    padding: 1rem 0 0;
+.paginator .pagination {
+  padding: 1rem 0 0;
 
-    a {
-      border: none;
-      background-color: transparent;
-      font-size: 20px;
-      color: #000;
-      font-weight: 500;
-    }
+  a {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
   }
+}
 
-  .paginator .pagination a.active {
-    color: #1AC7CF;
-    font-weight: 700;
-  }
+.paginator .pagination a.active {
+  color: #1ac7cf;
+  font-weight: 700;
+}
