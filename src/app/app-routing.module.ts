@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { LeadsListComponent } from './admin/leads-list/leads-list.component';
 import { UserListComponent } from './admin/user-list/user-list.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
@@ -132,6 +134,14 @@ const routes: Routes = [
   {
     path: 'agent/agent-profile',
     component: AgentProfileComponent1
+  },
+  {
+    path: 'admin/leads-list',
+    component: LeadsListComponent
+  },
+  {
+    path: 'admin/feed',
+    component: AdminFeedComponent
   },
 ];
 

@@ -35,6 +35,8 @@ import { AddLeadComponent } from './agent/add-lead/add-lead.component';
 import { AgentHeaderComponent } from './agent/agent-header/agent-header.component';
 import { UserListComponent } from './admin/user-list/user-list.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { LeadsListComponent } from './admin/leads-list/leads-list.component';
+import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,9 @@ import { SidebarComponent } from './admin/sidebar/sidebar.component';
     AddLeadComponent,
     AgentHeaderComponent,
     UserListComponent,
-    SidebarComponent
+    SidebarComponent,
+    LeadsListComponent,
+    AdminFeedComponent
   ],
   imports: [
     BrowserModule,
