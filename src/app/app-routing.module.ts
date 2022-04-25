@@ -6,6 +6,7 @@ import { AdminAgentListComponent } from './admin/agent-list/agent-list.component
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { LeadsListComponent } from './admin/leads-list/leads-list.component';
 import { UserListComponent } from './admin/user-list/user-list.component';
+import { UserComponent } from './admin/user/user.component';
 import { AgentListComponent } from './agent-list/agent-list.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AddLeadComponent } from './agent/add-lead/add-lead.component';
@@ -147,6 +148,10 @@ const routes: Routes = [
   {
     path: 'admin/agent-list',
     component: AdminAgentListComponent
+  },
+  {
+    path: 'admin/user',
+    component: UserComponent
   },
 ];
 

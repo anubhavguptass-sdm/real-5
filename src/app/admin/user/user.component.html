@@ -1,0 +1,874 @@
+<app-sidebar></app-sidebar>
+<main class="page-content">
+  <nav class="breadcrumb-nav" aria-label="breadcrumb">
+    <div class="container-fluid">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">User</li>
+        <li class="breadcrumb-item active" aria-current="page">Joshua</li>
+      </ol>
+    </div>
+  </nav>
+  <div class="page_card">
+    <div class="user-card">
+      <div class="row">
+        <div class="col-3 border-right">
+          <div class="user-image">
+            <img src="../../../assets/img/building-1.png" />
+          </div>
+          <div class="user-detail">
+            <h4>Joshua Kenneth</h4>
+            <p>joshuaenneth@gmail.com</p>
+            <button class="btn btn-primary btn-sm mr-2">Send Email</button>
+            <button class="btn btn-primary btn-sm">Assign</button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="details">
+            <div class="row">
+              <div class="col-3">
+                <p>Phone</p>
+                <h5>+ 631 1320 5461</h5>
+              </div>
+              <div class="col-3">
+                <p>Gender</p>
+                <h5>Male</h5>
+              </div>
+              <div class="col-4">
+                <p>Location</p>
+                <h5>Boston, Massachusetts</h5>
+              </div>
+              <div class="col-2 text-right">
+                <div class="d-flex">
+                  <button class="btn btn-primary btn-sm mr-4">Active</button>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-card">
+            <div class="row">
+              <div class="col-3">
+                <p>Phone</p>
+                <h5>+ 631 1320 5461</h5>
+              </div>
+              <div class="col-9">
+                <p>Phone</p>
+                <h5>+ 631 1320 5461</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_card p-0">
+    <div class="user-card1 pt-3 ml-3 mr-3">
+      <div class="manage-order">
+        <div class="row">
+          <div class="col-12">
+            <div class="order-card">
+              <div class="tab-card">
+                <ul>
+                  <li class="active" (click)="tabToggle(1)" [ngClass]="{'active': selectedItem === 1}">Manage Order</li>
+                  <li (click)="tabToggle(2)" [ngClass]="{'active': selectedItem === 2}">Manage Sellings</li>
+                  <li (click)="tabToggle(3)" [ngClass]="{'active': selectedItem === 3}">User Profile</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="manage-orders" *ngIf="showTab == 1">
+          <div class="row">
+            <div class="col-12">
+              <div class="profile_card">
+                <div class="">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="dis-flex">
+                        <div class="d-flex">
+                          <h6>Order</h6>
+                        </div>
+                        <div>
+                          <div class="search_bar">
+                            <div class="form-group has-search">
+                              <span class="fa fa-search form-control-feedback"></span>
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                          </div>
+                          <div class="sort">
+                            <p><b>Sort by</b>: Default Sorting
+                              <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Assigned Agent</th>
+                    <th scope="col">Assigned Date</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                      <p>02 : 30 am</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                      <p>02 : 30 am</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                      <p>02 : 30 am</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                      <p>02 : 30 am</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="manage-sellings" *ngIf="showTab == 2">
+          <div class="row">
+            <div class="col-12">
+              <div class="profile_card">
+                <div class="">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="dis-flex">
+                        <div class="d-flex">
+                          <h6>Sellings</h6>
+                        </div>
+                        <div>
+                          <div class="search_bar">
+                            <div class="form-group has-search">
+                              <span class="fa fa-search form-control-feedback"></span>
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                          </div>
+                          <div class="sort">
+                            <p><b>Sort by</b>: Default Sorting
+                              <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Property type</th>
+                    <th scope="col">Agent</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>Flat</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>Flat</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>Flat</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="image">
+                              <img src="../../assets/img/building-2.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <h5>Comfortable Villa in Green</h5>
+                            <p><img src="../../../assets/img/pin.png" />
+                              808 S Michigan Ave, Chicago</p>
+                            <p>$12000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <td>Flat</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="image">
+                            <img src="../../../assets/img/building-1.png" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <p>Allan Walker</p>
+                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>30 Dec, 2021</p>
+                    </td>
+                    <td><button class="btn">Cancel</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-card1" *ngIf="showTab == 3">
+          <form>
+            <div class="user-form">
+              <div class="user-image-card">
+                <img src="../../../assets/img/building-1.png" />
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Company info</label>
+                  <input type="text" class="form-control" id="compinfo" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email id</label>
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">About Me</label>
+                  <input type="text" class="form-control" id="gstno" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Mobile</label>
+                  <input type="text" class="form-control" id="pancardno" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Address</label>
+                  <input type="text" class="form-control" id="gstno" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-upload">Save Changes</button>
+          </form>
+          <form>
+            <div class="user-form">
+              <h4>Change Password</h4>
+              <div class="form-row mt-3">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Password</label>
+                  <input type="password" class="form-control" id="name" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">New Password</label>
+                  <input type="password" class="form-control" id="compinfo" placeholder="">
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-upload">Save Changes</button>
+          </form>
+
+          <div class="favorite">
+            <!-- Carousel -->
+            <h4>Favorite of Joshua</h4>
+            <div class="carousel property_slider">
+              <div class="p-0">
+                <ngx-slick-carousel class="carousel_area" #slickModal="slick-carousel" [config]="slideConfig1"
+                  (init)="slickInit()" (breakpoint)="breakpoint()" (afterChange)="afterChange()"
+                  (beforeChange)="beforeChange()">
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ngxSlickItem" ngxSlickItem>
+                    <div class="card">
+                      <div class="image">
+                        <img class="img-fluid" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div class="cost">
+                          <h3>$130,000 <span><i class="fa fa-heart" aria-hidden="true"></i></span></h3>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Headland Semi Detached Bungalow To Rent</h4>
+                        <p class="card-text">
+                          <img src="../../../assets/img/pin.png" /> 808 S Michigan
+                          Ave,Chicago, IL, 60605.
+                        </p>
+                        <div class="featured">
+                          <div class="row4">
+                            <div class="col4">
+                              <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                              </p>
+                            </div>
+                            <div class="col4">
+                              <p>
+                                <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                                sqft
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ngx-slick-carousel>
+              </div>
+            </div>
+          </div>
+          <div class="three-cards">
+            <div class="row">
+              <div class="col-4">
+                <div class="card-body">
+                  <h4>Most Search Locations</h4>
+                  <div class="locations">
+                    <h5>New York <span>75%</span></h5>
+                    <div class="progress">
+                      <div class="progress-bar green" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100" style="width:70%">
+                        <span class="sr-only">70% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations">
+                    <h5>Los Angeles <span>60%</span></h5>
+                    <div class="progress">
+                      <div class="progress-bar blue" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width:60%">
+                        <span class="sr-only">70% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations">
+                    <h5>California <span>50%</span></h5>
+                    <div class="progress">
+                      <div class="progress-bar orange" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100" style="width:50%">
+                        <span class="sr-only">70% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations">
+                    <h5>Chicago <span>35%</span></h5>
+                    <div class="progress">
+                      <div class="progress-bar purple" role="progressbar" aria-valuenow="35" aria-valuemin="0"
+                        aria-valuemax="100" style="width:35%">
+                        <span class="sr-only">70% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations">
+                    <h5>Phoenix <span>20%</span></h5>
+                    <div class="progress">
+                      <div class="progress-bar red" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                        aria-valuemax="100" style="width:20%">
+                        <span class="sr-only">70% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card-body">
+                  <div class="user-feedback">
+                    <h4>User Feedback</h4>
+                    <div class="feedback-body">
+                      <h5>Comfortable Villa in Green <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h5>
+                      <p>It is long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                    <div class="feedback-body">
+                      <h5>Comfortable Villa in Green <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h5>
+                      <p>It is long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                    <div class="feedback-body">
+                      <h5>Comfortable Villa in Green <i class="fa fa-ellipsis-v" aria-hidden="true"></i></h5>
+                      <p>It is long established fact that a reader will be distracted by the readable content</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card-body">
+                  <div class="user-feedback">
+                    <h4>Activity Logs</h4>
+                    <div class="feedback-body">
+                      <div class="log-date">
+                        <p>21st Jan, 2017</p>
+                        <ul>
+                          <li>
+                            <p>11:55 am</p>
+                            <p>Created a post called Register new home in Rogue</p>
+                          </li>
+                          <li>
+                            <p>11:55 am</p>
+                            <p>Created a post called Register new home in Rogue</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="feedback-body">
+                      <div class="log-date">
+                        <p>21st Jan, 2017</p>
+                        <ul>
+                          <li>
+                            <p>11:55 am</p>
+                            <p>Created a post called Register new home in Rogue</p>
+                          </li>
+                          <li>
+                            <p>11:55 am</p>
+                            <p>Created a post called Register new home in Rogue</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</main>
