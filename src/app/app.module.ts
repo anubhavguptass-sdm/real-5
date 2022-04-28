@@ -40,6 +40,7 @@ import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
 import { AdminAgentListComponent } from './admin/agent-list/agent-list.component';
 import { UserComponent } from './admin/user/user.component';
 import { AgentDetailComponent } from './admin/agent-detail/agent-detail.component';
+import { AddAgentComponent } from './admin/add-agent/add-agent.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { AgentDetailComponent } from './admin/agent-detail/agent-detail.componen
     AdminFeedComponent,
     AdminAgentListComponent,
     UserComponent,
-    AgentDetailComponent
+    AgentDetailComponent,
+    AddAgentComponent
   ],
   imports: [
     BrowserModule,
