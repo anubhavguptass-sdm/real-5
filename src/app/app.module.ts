@@ -39,6 +39,7 @@ import { LeadsListComponent } from './admin/leads-list/leads-list.component';
 import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
 import { AdminAgentListComponent } from './admin/agent-list/agent-list.component';
 import { UserComponent } from './admin/user/user.component';
+import { AgentDetailComponent } from './admin/agent-detail/agent-detail.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { UserComponent } from './admin/user/user.component';
     LeadsListComponent,
     AdminFeedComponent,
     AdminAgentListComponent,
-    UserComponent
+    UserComponent,
+    AgentDetailComponent
   ],
   imports: [
     BrowserModule,
