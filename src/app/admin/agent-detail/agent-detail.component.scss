@@ -82,11 +82,7 @@
           align-items: center;
           height: 100%;
 
-          .btn-primary {
-            background-color: transparent;
-            border: 1px solid #8c8c8c;
-            border-radius: 30px;
-            padding: 5px 20px;
+          .form-group select{
             color: #31863F;
           }
 
@@ -374,24 +370,29 @@
     }
 
     .manage-sellings {
-      .table {
-        tr {
-          td:nth-child(2) {
-            vertical-align: middle;
-            color: #8c8c8c;
-          }
-
-          td:nth-child(3) {
-            vertical-align: middle;
-
-            p:first-of-type {
-              color: #000;
-            }
-
-            p:last-of-type {
-              color: #1ac7cf;
-            }
-          }
+      .performance{
+        text-align: center;
+        h4{
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #8c8c8c;
+          text-align: center;
+        }
+        h5{
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 1rem;
+        }
+      }
+      .all-performnce{
+        text-align: center;
+        padding: 2rem;
+        h5{
+          font-size: 1rem;
+          font-weight: 700;
+          color: #000;
+          margin-top: 1rem;
         }
       }
     }

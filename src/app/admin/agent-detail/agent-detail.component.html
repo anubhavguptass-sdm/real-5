@@ -38,8 +38,13 @@
               </div>
               <div class="col-2 text-right">
                 <div class="d-flex">
-                  <button class="btn btn-primary btn-sm mr-4">Active</button>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  <div class="form-group">
+                    <select class="form-control" id="exampleSelect2" style="border-radius:40px; height: 50px;">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                  </div>  
+                  
                 </div>
               </div>
             </div>
@@ -113,7 +118,7 @@
                           </div>
                           <div class="sort">
                             <p><b>Sort by</b>: Default Sorting
-                                <i class="fa fa-sort" aria-hidden="true"></i>
+                              <i class="fa fa-sort" aria-hidden="true"></i>
                             </p>
                           </div>
                         </div>
@@ -292,194 +297,50 @@
         </div>
         <div class="manage-sellings" *ngIf="showTab == 2">
           <div class="row">
-            <div class="col-12">
-              <div class="profile_card">
-                <div class="">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="dis-flex">
-                        <div class="d-flex">
-                          <h6>Sellings</h6>
-                        </div>
-                        <div>
-                          <div class="search_bar">
-                            <div class="form-group has-search">
-                              <span class="fa fa-search form-control-feedback"></span>
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                          </div>
-                          <div class="sort">
-                            <p><b>Sort by</b>: Default Sorting
-                              <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+            <div class="col-6">
+              <div class="performance">
+                <h4>Overall Performance based on all</h4>
+                <h5>Deals is 80%</h5>
+                <div class="image">
+                  <img src="../../../assets/img/performance-graph.png" />
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <div class="all-performnce">
+                    <div class="image">
+                      <img src="../../../assets/img/close-deals-graph.png" />
                     </div>
+                    <h5>Closed Deals</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="all-performnce">
+                    <div class="image">
+                      <img src="../../../assets/img/missed-lead-graph.png" />
+                    </div>
+                    <h5>Missed Lead</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="all-performnce">
+                    <div class="image">
+                      <img src="../../../assets/img/declined-lead-graph.png" />
+                    </div>
+                    <h5>Declined Leads</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="all-performnce">
+                    <div class="image">
+                      <img src="../../../assets/img/active-lead-graph.png" />
+                    </div>
+                    <h5>Active Leads</h5>
                   </div>
                 </div>
               </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Property</th>
-                    <th scope="col">Property type</th>
-                    <th scope="col">Agent</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-3">
-                            <div class="image">
-                              <img src="../../assets/img/building-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="col-9">
-                            <h5>Comfortable Villa in Green</h5>
-                            <p><img src="../../../assets/img/pin.png" />
-                              808 S Michigan Ave, Chicago</p>
-                            <p>$12000</p>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <td>Flat</td>
-                    <td>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="image">
-                            <img src="../../../assets/img/building-1.png" />
-                          </div>
-                        </div>
-                        <div class="col-9">
-                          <p>Allan Walker</p>
-                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>30 Dec, 2021</p>
-                    </td>
-                    <td><button class="btn">Cancel</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-3">
-                            <div class="image">
-                              <img src="../../assets/img/building-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="col-9">
-                            <h5>Comfortable Villa in Green</h5>
-                            <p><img src="../../../assets/img/pin.png" />
-                              808 S Michigan Ave, Chicago</p>
-                            <p>$12000</p>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <td>Flat</td>
-                    <td>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="image">
-                            <img src="../../../assets/img/building-1.png" />
-                          </div>
-                        </div>
-                        <div class="col-9">
-                          <p>Allan Walker</p>
-                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>30 Dec, 2021</p>
-                    </td>
-                    <td><button class="btn">Cancel</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-3">
-                            <div class="image">
-                              <img src="../../assets/img/building-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="col-9">
-                            <h5>Comfortable Villa in Green</h5>
-                            <p><img src="../../../assets/img/pin.png" />
-                              808 S Michigan Ave, Chicago</p>
-                            <p>$12000</p>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <td>Flat</td>
-                    <td>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="image">
-                            <img src="../../../assets/img/building-1.png" />
-                          </div>
-                        </div>
-                        <div class="col-9">
-                          <p>Allan Walker</p>
-                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>30 Dec, 2021</p>
-                    </td>
-                    <td><button class="btn">Cancel</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-3">
-                            <div class="image">
-                              <img src="../../assets/img/building-2.png" alt="" />
-                            </div>
-                          </div>
-                          <div class="col-9">
-                            <h5>Comfortable Villa in Green</h5>
-                            <p><img src="../../../assets/img/pin.png" />
-                              808 S Michigan Ave, Chicago</p>
-                            <p>$12000</p>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <td>Flat</td>
-                    <td>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="image">
-                            <img src="../../../assets/img/building-1.png" />
-                          </div>
-                        </div>
-                        <div class="col-9">
-                          <p>Allan Walker</p>
-                          <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>30 Dec, 2021</p>
-                    </td>
-                    <td><button class="btn">Cancel</button></td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
@@ -521,7 +382,9 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary btn-upload">Save Changes</button>
+            <div class="text-right">
+              <button class="btn btn-primary btn-upload text-right">Save Changes</button>
+            </div>
           </form>
           <form>
             <div class="user-form">
@@ -537,7 +400,9 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary btn-upload">Save Changes</button>
+            <div class="text-right">
+              <button class="btn btn-primary btn-upload">Save Changes</button>
+            </div>
           </form>
         </div>
       </div>
