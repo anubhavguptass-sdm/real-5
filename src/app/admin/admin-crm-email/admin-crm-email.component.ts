@@ -9,7 +9,7 @@ export class AdminCrmEmailComponent implements OnInit {
   showMainContent: boolean | undefined;
 
   constructor() {
-    
+
   }
 
   ngOnInit(): void {
