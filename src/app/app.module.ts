@@ -41,6 +41,7 @@ import { AdminAgentListComponent } from './admin/agent-list/agent-list.component
 import { UserComponent } from './admin/user/user.component';
 import { AgentDetailComponent } from './admin/agent-detail/agent-detail.component';
 import { AddAgentComponent } from './admin/add-agent/add-agent.component';
+import { AdminCrmEmailComponent } from './admin/admin-crm-email/admin-crm-email.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { AddAgentComponent } from './admin/add-agent/add-agent.component';
     AdminAgentListComponent,
     UserComponent,
     AgentDetailComponent,
-    AddAgentComponent
+    AddAgentComponent,
+    AdminCrmEmailComponent
   ],
   imports: [
     BrowserModule,

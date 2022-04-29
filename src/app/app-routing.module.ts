@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AddAgentComponent } from './admin/add-agent/add-agent.component';
+import { AdminCrmEmailComponent } from './admin/admin-crm-email/admin-crm-email.component';
 import { AdminFeedComponent } from './admin/admin-feed/admin-feed.component';
 import { AgentDetailComponent } from './admin/agent-detail/agent-detail.component';
 import { AdminAgentListComponent } from './admin/agent-list/agent-list.component';
@@ -162,6 +163,10 @@ const routes: Routes = [
   {
     path: 'admin/add-agent',
     component: AddAgentComponent
+  },
+  {
+    path: 'admin/admin-crm-email',
+    component: AdminCrmEmailComponent
   },
 ];
 
