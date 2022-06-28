@@ -1,3 +1,5 @@
+
+@import "../../../assets/scss/variable.scss";
 .page-content {
   display: inline-block;
   width: 100%;
@@ -5,11 +7,94 @@
   overflow-x: hidden;
   background-color: #f1f1f1;
   min-height: 100vh;
+  @include sm {
+    padding: 5rem 1rem 1rem 6rem;
+  }
 }
 .page_card {
-  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f,
-    0 5px 5px -3px #ebebeb33;
+  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f, 0 5px 5px -3px #ebebeb33;
   padding: 1rem;
   background-color: #fff;
   margin-bottom: 1rem;
+  border-radius: 10px;
+
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+      display: none;
+  }
+}
+table {
+    width: 100%;
+    thead {
+        background-color: rgb(236, 236, 236);
+        color: #8c8c8c;
+    }
+}
+
+.image_contain {
+  display: flex;
+  .image {
+    margin-right: 1rem;
+    img {
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }
+  }
+
+  h5 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 1.5rem;
+  i {
+    font-size: 1rem;
+    color: #ccc;
+  }
+}
+.btn-primary-outline {
+  background-color: #fff;
+  color: #1ac7cf;
+  border-color: #1ac7cf;
+}
+.dash_card {
+  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f, 0 5px 5px -3px #ebebeb33;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  i {
+    color: #1ac7cf;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+  }
+  p {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #888;
+    font-weight: 600;
+  }
 }
