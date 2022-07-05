@@ -43,6 +43,7 @@ import { AgentDetailComponent } from './admin/agent-detail/agent-detail.componen
 import { AddAgentComponent } from './admin/add-agent/add-agent.component';
 import { AdminCrmEmailComponent } from './admin/admin-crm-email/admin-crm-email.component';
 import { AdminWhiteboardComponent } from './admin/admin-whiteboard/admin-whiteboard.component';
+import { MyScheduleComponent } from './agent/my-schedule/my-schedule.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { AdminWhiteboardComponent } from './admin/admin-whiteboard/admin-whitebo
     AgentDetailComponent,
     AddAgentComponent,
     AdminCrmEmailComponent,
-    AdminWhiteboardComponent
+    AdminWhiteboardComponent,
+    MyScheduleComponent
   ],
   imports: [
     BrowserModule,

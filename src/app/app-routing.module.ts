@@ -20,6 +20,7 @@ import { AgentWhiteboardComponent } from './agent/agent-whiteboard/agent-whitebo
 import { CRMEmailComponent } from './agent/crmemail/crmemail.component';
 import { FeedComponent } from './agent/feed/feed.component';
 import { MyLeadsComponent } from './agent/my-leads/my-leads.component';
+import { MyScheduleComponent } from './agent/my-schedule/my-schedule.component';
 import { Real5LeadsComponent } from './agent/real5-leads/real5-leads.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -144,6 +145,10 @@ const routes: Routes = [
   {
     path: 'admin/leads-list',
     component: LeadsListComponent
+  },
+  {
+    path: 'agent/my-schedule',
+    component: MyScheduleComponent
   },
   {
     path: 'admin/feed',
